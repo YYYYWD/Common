@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html><head><title></title>
+    <script type="text/javascript">
+        window.ondblclick = function () {
+            window.alert("I was double clicked by you!");
+        }
+       function myfun() {
+           window.document.title = "Browser title changed! ";
+           window.document.body.bgColor = "red";//改变背景颜色
+           window.document.getElementById("mydiv").innerHTML='<A href="baidu">百度</A>';
+           window.document.getElementById("mydiv").style.backgroundColor = "green";
+       }
+    </script>
+</head>
+    <body>
+    <input id='mybtn' type='button' value='change color'onclick="myfun();">
+    <div id="mydiv">I am a student.</div>
+</body>
+</html>
+

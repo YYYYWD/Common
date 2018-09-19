@@ -1,0 +1,17 @@
+<table border="1" cellpadding="15" cellspacing="15" 
+       style="position: relative; left: 100; top: 100">
+  <tr><td>
+     <div onclick="show()" style="background: silver; cursor: hand">
+       Click here to show.
+     </div>
+  </td></tr>
+</table>
+<script>
+    function show() {
+  alert("event.x:" + event.x + "\nevent.y:" + event.y +
+  "\nevent.clientX:" + event.clientX + "\nevent.clientY:" + event.clientY +
+ "\nevent.offsetX:" + event.offsetX + "\nevent.offsetY:" + event.offsetY +
+ "\nevent.screenX:" + event.screenX + "\nevent.screenY:"
+ + event.screenY);
+  }
+</script>

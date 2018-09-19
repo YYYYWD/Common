@@ -1,0 +1,21 @@
+<script language="javascript">
+    function arrayName(size) {
+        this.length = size;
+        for (var i = 0; i <= size; i++) this[i] =i;
+        return this;
+    }
+    var MyArray = new arrayName(10);
+
+    alert(MyArray[7]); //输出8
+</script>
+
+<script language="javascript">
+    var my_array = new Array();	//创建动态数组
+    for (i = 0; i < 10; i++) {
+        my_array[i] = i;
+    }
+    x = my_array[4];
+    alert("x=" + x);					//输出4
+    alert(my_array.length);		//输出数组的元素个数为10
+
+</script>

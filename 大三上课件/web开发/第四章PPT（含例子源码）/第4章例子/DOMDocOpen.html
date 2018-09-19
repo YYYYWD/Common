@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>First Document</title>
+<script type="text/javascript">
+ function replace() {
+   //µ±Ç°ÍøÒ³±»Ìæ»»
+  var oNewDoc = document.open("text/html", "replace");
+  var sMarkup = "<HTML><HEAD><TITLE>New Document</TITLE>" +
+      "<BODY bgcolor='red'>Hello, world </BODY></HTML>";
+  oNewDoc.write(sMarkup);
+  oNewDoc.close();
+ }
+</script>
+</head>
+<body>
+    <input type="button" value="Ìæ»»ÍøÒ³" onclick="replace();">
+</body>
+</html>
+

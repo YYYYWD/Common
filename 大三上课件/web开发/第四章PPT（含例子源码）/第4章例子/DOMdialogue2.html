@@ -1,0 +1,33 @@
+<html><head><title></title></head>
+<script type="text/javascript">
+    function ModalWin() {//showModelessDialog
+        showModalDialog("showModalDialog_target.htm", "", "dialogWidth:200px;" + fnSetValues());
+    }
+    function fnSetValues() {
+        //从下拉列表框中得到所选中的对话框高度
+        var iHeight = myForm.oHeight.options[myForm.oHeight.selectedIndex].text;
+
+        if (iHeight.indexOf("Random") > -1) {
+            var BodyHeight = document.body.clientHeight;//得到浏览器页面显示区域的高度
+            //alert(BodyHeight);
+            /* Math.random()返回0与1之间的随机数 */
+            //保证模态窗口的高度不超出浏览器页面显示区域
+            iHeight = parseInt(Math.random() * BodyHeight)
+        }
+        var sFeatures = "dialogHeight:" + iHeight + "px;";
+        return sFeatures;
+    }
+</script>
+<body onmouseover="javascript:self.status='我是浏览器窗口状态栏,欢迎您!';">
+    <form id="myForm">
+        模态对话框高度:<select name="oHeight">
+            <option>-- Random -- </option>
+            <option>120</option>
+            <option>200</option>
+            <option>250</option>
+            <option>300</option>
+        </select><br>
+  建立模态对话框: <input type="button" value="创建模态对话框" onclick="javascript: ModalWin();">
+    </form>
+</body></html>
+

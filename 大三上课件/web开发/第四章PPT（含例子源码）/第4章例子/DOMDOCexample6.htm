@@ -1,0 +1,35 @@
+﻿<html><head><title>使用DOM生成一张表格</title>
+<script language="JavaScript">
+function genTable(pNode){
+var i,j;
+var contents=new Array(3);
+for (i=0;i<3;i++)  contents[i]=new Array(3);
+contents[0][0]="书名";
+contents[0][1]="出版社";
+contents[1][0]="C++程序设计教程";
+contents[1][1]="清华大学出版社";
+contents[2][0]="Web程序设计";
+contents[2][1]="电子工业出版社";
+var tableNode=document.createElement("TABLE");
+var tBodyNode=document.createElement("TBODY");
+var t1,t2;
+for (i=0;i<3;i++){
+  t1=document.createElement("TR");
+    tBodyNode.appendChild(t1);
+    for (j=0;j<2;j++){
+      t1=document.createElement("TD");
+      t2=document.createTextNode(contents[i][j]);
+      t1.appendChild(t2);
+      tBodyNode.childNodes[i].appendChild(t1);
+    }
+}
+pNode.appendChild(tableNode);
+tableNode.id="test";
+tableNode.border=2;
+tableNode.appendChild(tBodyNode);
+}
+</script>
+</head>
+<body id="tableTest">
+<h2 onClick="genTable(tableTest)">单击此处将生成一个表格</h2>
+<hr></body></html>

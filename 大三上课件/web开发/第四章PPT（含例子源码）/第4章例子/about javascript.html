@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function myfun() {
+            var a = 10;
+            var name = Text1.value;
+            var t =new Date();
+
+            var str = "尊敬的 " + name + " : 您好！今天是" + t.getFullYear() + "年" + (t.getMonth() + 1)
+                + "月" + t.getDate() + "日";
+            Mydate.innerText = str;
+            alert(str);
+        }
+
+    </script>
+</head>
+<body>
+    <div id="Mydate" ></div> <p/>
+    输入姓名：<input id="Text1" type="text" /> <p/>
+    <input id="Button1" type="button" value="button" onclick="javascript: myfun();" />
+
+
+</body>
+</html>
+
+
+
+
+每一个HTML标记或者称为HTML元素（有时也称HTML标签）都可看成一个在浏览器中显示的对象。可以脚本语言例如
+
+123323??⊕⊙∽
+
+<!DOCTYPE html>
+<html><head><title></title><style type="text/css"> 
+.mydiv
+{
+border:10px solid red;
+padding:10px 40px; 
+background:#dddddd;
+width:300px;
+border-radius:10px;   /*边框的半径,实现圆角矩形*/
+box-shadow: 20px 20px 5px #888888;   /*边框的阴影效果*/
+/*
+  border-image:url(jpg/back.png) 30 30 round;     边框可用图形填充,图像平铺（重复）来填充该边框。
+  border-image:url(jpg/back.png) 30 30  stretch;  图像被拉伸以填充该边框
+  border-image-source 指定border的背景图的url
+  border-image-slice 设置图片如何切割的属性
+  border-image-width 定义border-image的显示区域的
+  border-image-repeat 设置图片重复
+*/
+}
+</style>
+</head>
+<body>
+
+<div class="mydiv">border-radius 添加圆角边框！ </div>
+<div style="font-size:36pt;text-shadow:5px 5px 5px #FF0000;">We study very hard!</div>
+</body>
+</html>

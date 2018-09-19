@@ -1,0 +1,29 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>jquery先淡出再变形的动画</title>
+<style type="text/css">
+*{margin: 0;padding: 0;}	
+body { font-size: 13px; line-height: 130%; padding: 60px }
+#panel { width: 500px; height:500px;border: 1px solid #0050D0 }
+.head { padding: 5px; background: #96E555; cursor: pointer }
+.content { padding: 10px; text-indent: 2em; border-top: 1px solid #0050D0;display:block; }
+</style>
+<script type="text/javascript" src="js/jquery-2.2.0.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#panel h1.head").toggle(function () {
+            $(this).next("div.content").fadeOut();
+        }, function () {
+            $(this).next("div.content").fadeIn();
+        })
+    })
+</script>
+</head>
+<body>
+<div id="panel">
+	<h1 class="head">简单的jQuery动画</h1>
+	<div class="content">
+		展示使用jQuery生成动画效果的一个小例子，让一个Div层先淡出然后再发生形变，最后折叠消失。</div>
+</div>
+</body>
+</html>

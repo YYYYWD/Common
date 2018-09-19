@@ -1,0 +1,17 @@
+<html><head><title></title></head>
+<body  onload="javascript:var p=20;alert('hello!');" >
+    <input id="btnNewWin" type="button" value="New Window">
+    <input id="btnCloseWin" type="button" value="Close Window" onclick="javascript:window.close();">
+</body></html>
+    <script type="text/javascript">
+        document.getElementById("btnNewWin").onclick = function () {
+            var mytarget = '_blank' 
+/* 新打开的浏览器窗口的左上角相对屏幕左上角的坐标为(75,20)像素，
+  窗口宽480、高420个像素，在窗口加载QQ首页。其中mytarget可为"replace"
+ （用qq首页替换当前页面）、"_blank"（新打开一个浏览器窗口显示QQ首页）、
+  "_parent"（在当前页的父窗口中打开QQ首页）、"_search"（在搜索窗口中打开QQ首页）、
+  "_self"（用QQ首页替换当前页面）、"_top"(用QQ首页替换框架页面，无框架时和_self相同)。*/
+            window.open('http://www.qq.com', mytarget,
+     'scrollbars=no,width=480,height=420,left=75,top=20,status=no,resizable=yes');
+        }
+    </script>  

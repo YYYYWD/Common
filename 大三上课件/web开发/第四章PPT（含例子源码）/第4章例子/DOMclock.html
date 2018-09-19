@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>时钟</title>
+    <style type="text/css">
+	h3{
+		line-height:0.5;
+		text-indent:230px;
+		}
+	</style>
+</head>
+<body>
+<canvas id="graph" width="500px" height="500px">你的浏览器不支持canvas</canvas>
+<h3 id="str1"></h3>
+<h3 id="str2"></h3>
+<script type="text/javascript">
+    var canvas = document.getElementById('graph');
+    var context = canvas.getContext('2d');
+    var r = canvas.width/2.5;  //半径
+    //将坐标中心作为起启点
+    context.translate(canvas.width / 2, canvas.height / 2);
+
+    function drawClockScale() {
+        var rad = 0, angle, font, fontX, fontY;
+        context.fillStyle = '#000';
+        // 绘制表盘时刻度
+        for (var i = 0; i < 12; i++) {
+            context.save();
+            rad = i * Math.PI / 6;  // 弧度制，大刻度，总共分为12刻度，每刻度为：2π/12 → π/6
+            context.rotate(rad);  // 旋转画布绘制刻度
+            context.fillRect(r - 10, 0, 10, 5);
+            context.restore();
+        }
+        // 绘制表盘分刻度
+        for (i = 0; i < 60; i++) {
+            context.save();      // 记录旋转画布之前初始状态
+            rad = i*Math.PI/30;
+            context.rotate(rad);  // 旋转画布绘制刻度
+            context.fillRect(r - 10, 0, 5, 2);   //绘制
+            context.restore();  // 恢复初始状态，未旋转前
+        }
+
+        // 绘制表盘文字
+        for(i = 0;i<12;i++){
+            angle = i * 30;
+            // 转换为弧度制,Math.sin、Math.cos都接受弧度制单位
+            angle = angle*Math.PI/180;;
+            font = (i + 3 > 12)?i+3-12 : i+3;
+            fontX = Math.round(Math.cos(angle)*(r-30));
+            fontY = Math.round(Math.sin(angle)*(r-30));
+            context.font = 'bold 14px 微软雅黑';
+            context.fillText(font+'',fontX,fontY);
+        }
+    }
+
+    function drawHand(rotate,width,height){
+        context.save();
+        rotate = rotate*Math.PI/180;      // 转换为弧度制
+        context.rotate(rotate);
+        context.fillRect(-10,0,width,height);
+        context.restore();
+    }
+
+    function setTime(){
+		today = new Date();
+        var hour = today.getHours();
+        var minute = today.getMinutes();
+        var second = today.getSeconds();
+
+        var hourRotate,minRotate,secRotate;
+        // 计算秒针角度并绘制图形
+        secRotate = second*6-90;
+        drawHand(secRotate,r-30,2);
+        // 计算分针角度并绘制图形
+        minRotate = (minute*60 + second)*0.1 - 90;
+        drawHand(minRotate,r-50,4);
+        // 计算时针角度并绘制图形
+        hourRotate = (hour*60*60 + minute*60 + second)/120 - 90;
+        drawHand(hourRotate,r-70,5);
+		document.getElementById("str1").innerText=(hour+":"+minute+":"+second);
+    }
+
+    setInterval(function(){
+        context.clearRect(-canvas.width / 2,-canvas.height / 2,canvas.width,canvas.height);
+        drawClockScale();
+        setTime();
+    },1000);
+
+
+today = new Date();
+if (today.getDay() == 5) document.getElementById("str2").innerText="星期五";
+if (today.getDay() == 6) document.getElementById("str2").innerText="星期六";
+if (today.getDay() == 0) document.getElementById("str2").innerText="星期日";
+if (today.getDay() == 1) document.getElementById("str2").innerText="星期一";
+if (today.getDay() == 2) document.getElementById("str2").innerText="星期二";
+if (today.getDay() == 3) document.getElementById("str2").innerText="星期三";
+if (today.getDay() == 4) document.getElementById("str2").innerText="星期四";
+
+</script>
+</body>
+</html>

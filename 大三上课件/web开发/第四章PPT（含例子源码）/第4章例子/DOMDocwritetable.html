@@ -1,0 +1,18 @@
+<html><head><title></title></head>
+<body>
+<table border="1" style="width:"50%">
+<script>
+    // 动态生成8行16列表格
+    var rows =800; cols = 160;
+    for (var i = 1; i <= rows; i++) {
+        document.write("<tr>");
+        for (var j = 1; j <= cols; j++) {
+            document.write("<td>" + i + "," + j + "</td>");
+        }
+        document.write("</tr>");
+    }
+</script>
+</table>
+
+</body>
+</html>

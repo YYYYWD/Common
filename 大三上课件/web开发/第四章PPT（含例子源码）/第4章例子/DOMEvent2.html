@@ -1,0 +1,36 @@
+<html><head><title></title>
+    <script type="text/javascript">
+        //显示按键的ASCII码
+        function myfun() {
+            var kcode=event.keyCode;
+            document.getElementById("txt0").value =
+                "have Pressed " + String.fromCharCode(kcode) + ", ASCII码为:" + event.keyCode;
+        }
+        // 如果按住Alt键再单击上面的文本框，可以选中文本框中的文本。
+        function checkAlt(oEvent) {
+            if (oEvent.altKey) document.getElementById("txt1").select();
+        }
+        //使用"Ctrl+Del"组合键可清除上面的文本框的内容。（必须先使文本框获得焦点。本例只适用于IE浏览器。）
+        function clearText(oEvent) {
+            if (oEvent.ctrlKey && oEvent.keyCode == 127)
+                document.getElementById("txt2").value = "";
+        }
+        //按住"Shift"键并用鼠标点击上面的色块，可改变色块颜色
+        var b = true;
+        function setColor(oEvent) {
+            if (oEvent.shiftKey && b)
+                document.getElementById("box").style.backgroundColor = "blue";
+            if (oEvent.shiftKey && !b)
+                document.getElementById("box").style.backgroundColor = "red";
+            b = !b;
+                    }
+    </script>
+</head>
+<body onkeypress="myfun(event);">
+    <input id="txt0" type="text" value="Hello World!" style="width: 300px;font-size:larger;"  /><p/>
+    <input id="txt1" type="text" value="Hello World!" onclick="checkAlt(event)" /><p />
+    <input id="txt2" type="text" value="Hello World!" onclick="clearText(event)" /><p />
+    <div id="box" style="width:50px; height:25px;border:1px solid black; background-color:red"
+            onclick="setColor(event)"></div><p />
+</body>
+</html>

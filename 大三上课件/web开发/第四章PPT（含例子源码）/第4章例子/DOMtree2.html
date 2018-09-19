@@ -1,0 +1,23 @@
+<html><head><title></title>
+<script type="text/javascript">
+ function domNode_example() {
+ alert(document.getElementById("myP").nodeName);
+ alert(document.getElementById("myP").nodeType);
+ alert(document.getElementById("myP").innerHTML);
+ alert(document.getElementById("myP").parentNode.nodeName);
+ alert(document.getElementById("myP").parentNode.nodeType);
+ alert(document.getElementById("myP").parentNode.innerHTML);
+ }
+</script>
+</head>
+<body>
+
+    <input id="Button1" type="button" value="button" onclick="domNode_example();" />
+    <div id="myDIV" style="border: 3px; background: #f0fcfc">Dom tree example 
+        <p id="myP">I'm P element</p>
+    </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>新建网页 1</title>
+    <style type="text/css">
+        #Expression { height: 23px; width: 188px;margin-top: 18px;  }
+        #Result { height: 24px; width: 97px; }
+    </style>
+    
+    <script type="text/javascript">
+        function Calc() {
+            var anExpression = Expression.value    // "(16 * 9 % 7)";
+            Result.value = eval(anExpression);//将字符型表达式进行求值
+        }
+    </script>
+    
+</head>
+<body>
+
+    请输入表达式：<input id="Expression" type="text" />
+    <input id="Button1" type="button" value="=" onclick="Calc();" />
+    <input id="Result" type="text" />
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+		<title>浏览器键盘事件</title>
+	</head>
+	
+	<table align=center with=800 >
+		<script language="javascript" >
+			var i, j;
+			var inputName;
+			for(i=0; i<20; i++)
+			{
+				document.write("<tr>");
+				for(j=0; j<5; j++)
+				{
+					inputName = "input" + i + "_" + j;
+					document.write("<td><input name='" + inputName + "' id='" + inputName + "' onkeydown='keyDown(event, " + i + ", " + j + ")'></td>");
+				}
+				document.write("</tr>");
+			}
+		</script>
+	</table>
+	
+	<script language="javascript">
+		function keyDown(e, i, j)
+		{
+			var browser = navigator.userAgent;
+			var keyCode;
+			if(browser.indexOf('MSIE') != -1) // for IE
+			{
+				keyCode = event.keyCode;
+			}
+			else          // for Firefox, netscape and opera
+			{
+				keyCode = e.which;
+			}
+			
+			var nextElement;
+			
+			if(keyCode == 37)   // left
+			{
+				nextElement = document.getElementById("input" + i + "_" + (j-1));
+				if(nextElement != null)
+				{
+					nextElement.select();
+				}
+			}
+			
+			if(keyCode == 38)   // up
+			{
+				nextElement = document.getElementById("input" + (i-1) + "_" + j);
+				if(nextElement != null)
+				{
+					nextElement.select();
+				}
+			}
+			
+			if(keyCode == 39)   // right
+			{
+				nextElement = document.getElementById("input" + i + "_" + (j+1));
+				if(nextElement != null)
+				{
+					nextElement.select();
+				}
+			}
+			
+			if(keyCode == 40)   // down
+			{
+				nextElement = document.getElementById("input" + (i+1) + "_" + j);
+				if(nextElement != null)
+				{
+					nextElement.select();
+				}
+			}
+		}
+	</script>
+</html>

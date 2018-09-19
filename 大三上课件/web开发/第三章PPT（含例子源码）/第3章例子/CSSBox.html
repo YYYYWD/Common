@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        .myBox1 { /*方框的四边边幅空白和内部空白相同*/
+            padding: 25px;
+            margin: 50px;
+        }
+
+        .myBox2 { /*方框的四边边幅空白和内部空白各不相同*/
+            padding: 5px 6px 7px 8px;
+            margin: 5px 6px 7px 8px;
+        }
+
+        .myBox3 { /*方框的四边边幅空白和内部空白独立指定*/
+            margin-left: 40px;
+            margin-top: 40px;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 40px;
+        }
+
+        div {
+            border-style: solid;
+            border-width: 20px;
+            border-color: red;
+            height: 50px;
+            width: 500px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="myBox3">
+        如果我们定义了这样的样式规则body {color: blue}，
+        则网页中所有的文字都以蓝色显示，除非另外指定样式或格式来更改这一设定。
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html><head><title></title>
+<script type="text/javascript">
+    function domNode_example() {
+ //1.在id为myP的div后添加一个text文本框标记，设置Value属性为“I am a Text”
+        var nod1 = document.createElement("input");
+        nod1.setAttribute("type", "'text");
+        nod1.setAttribute("value", "I am a Text");
+        myP.appendChild(nod1);  //添加节点        
+        //myP.insertBefore(nod1);
+
+//2. 在文档中添加一个背景为红色的Div。id属性设为mydiv,里面添加文字"I am created  DIV"
+        var nod2 = document.createElement("div")  
+        nod2.setAttribute("style", "background-color:red;");
+        nod2.setAttribute("id", "mydiv");
+       // document.body.appendChild(nod2);
+        document.body.insertBefore(nod2);
+        mydiv.innerText = "I am a created  DIV";
+    }
+</script>
+</head>
+<body>
+    <h3 style="color: red">Dom tree 一种非常灵活的网页编程技术</h3>
+    <input id="Button1" type="button" value="button" onclick="domNode_example();" />
+    <p id="myP">I'm P element</p>
+    <div id="myDIV" style="border: 3px; background: #f0fcfc">Dom tree example </div>
+</body>
+</html>
+
+
+

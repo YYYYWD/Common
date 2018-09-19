@@ -1,0 +1,17 @@
+﻿<html>
+<script language="JScript">
+    function CreateControl(DivID, CLSID, ObjectID,WIDTH, HEIGHT, URL, AUTOSTART){
+        var d = document.getElementById(DivID);
+        d.innerHTML='<object classid='+CLSID+' id='+ObjectID+' width='+WIDTH+' height='+HEIGHT+'><param name="URL" value=' + URL + '>  <param name="autoStart" value=' + AUTOSTART + '/>';
+    }
+</script>
+<head>
+</head>
+<body>
+    <div id="EXAMPLE_DIV_ID">  This text will be replaced by the control </div>
+    <script language="JScript">
+        CreateControl("EXAMPLE_DIV_ID","clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6",
+        "EXAMPLE_OBJECT_ID", "300", "200", "有没有人告诉你.mp3","-1");
+    </script>
+</body>
+</html>

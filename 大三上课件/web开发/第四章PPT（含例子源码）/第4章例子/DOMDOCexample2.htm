@@ -1,0 +1,25 @@
+﻿<html>
+<head>
+</head>
+<body>
+    <form name="mytable">
+        请输入数据：
+        <input type="text" name="text1" value="">
+    </form>
+    <a name="Link1" href="3-1.html">链接到第一个文本</a><br>
+    <a name="Link2" href="3-2.html">链接到第二个文本</a><br>
+    <a name="Link2" href="3-3.html">链接到第三个文本</a><br>
+    <a href="#Link1">第一锚点</a>
+    <a href="#Link2">第二锚点</a>
+    <a href="#Link3">第三锚点</a><br>
+    <h3 id="myHeader">查看此元素名称</h3>
+
+    <script language="javascript">
+        document.write("文档有"+document.links.length+"个链接"+"<br>");
+        document.write("文档有"+document.anchors.length+"个锚点"+"<br>");
+        document.write("文档有"+document.forms.length+"个窗体<br>");
+        document.write("这是" + document.getElementById("myHeader").tagName + " 元素")
+    </script>
+  
+</body>
+</html>

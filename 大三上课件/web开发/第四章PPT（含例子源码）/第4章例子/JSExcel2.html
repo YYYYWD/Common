@@ -1,0 +1,24 @@
+<html><head><title>新建网页 2</title>
+<script language="javascript">
+    //启动Excel
+    var ExcelApp = new ActiveXObject("Excel.Application");
+    ExcelApp.Visible = true;   //使Excel窗口可见
+    ExcelApp.WorkBooks.Open("D:\\TEST1.XLSX");  //打开上次建好的D:\TEST1.XLSX
+    var objExcelBook = ExcelApp.ActiveWorkBook;
+    var objExcelSheets = objExcelBook.Worksheets;
+    var objExcelSheet = objExcelBook.Sheets(1); //指定当前工作区为Sheet2
+    //此处为对Excel单元格进行填写数据的语句
+    objExcelSheet.Range("B2:k2").Value = Array("Week1", "Week2", "Week3", "Week4", "Week5", "Week6", "Week7");
+    objExcelSheet.Range("B3:k3").Value = Array("67", "87", "5", "9", "7", "45", "45", "54", "54", "10");
+    objExcelSheet.Range("B4:k4").Value = Array("10", "10", "8", "27", "33", "37", "50", "54", "10", "10");
+    objExcelSheet.Range("B5:k5").Value = Array("23", "3", "86", "64", "60", "18", "5", "1", "36", "80");
+    objExcelSheet.Cells(3, 1).Value = "InternetExplorer";
+    objExcelSheet.Cells(4, 1).Value = "Netscape";
+    objExcelSheet.Cells(5, 1).Value = "Other";
+    objExcelSheet.SaveAs("D:\\TEST2.XLSX");	//保存到D:\TEST2.XLSX
+    ExcelApp.Quit();							//退出Excel
+</script>
+
+</head>
+<body></body>
+</html>

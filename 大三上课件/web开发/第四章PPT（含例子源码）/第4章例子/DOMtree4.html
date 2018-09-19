@@ -1,0 +1,26 @@
+<script>
+    function fun_click() {  //定义一个事件函数
+        document.getElementById("mybutton").style.backgroundColor = "blue";
+        
+        //alert("yes, that's me");
+    }
+
+    function createButton() {
+        //动态创建一个按钮
+// var nod3=document.createElement("<input type='button' value='click  me' id='mybutton'>"); html4
+        var nod3 = document.createElement("input"); //html5
+        nod3.setAttribute("type", "button");
+        nod3.setAttribute("value", "click  me");
+        nod3.setAttribute("id", "mybutton");
+        var mybutton = mydiv.appendChild(nod3);
+        //为该按钮添加一个click事件处理函数
+        mybutton.attachEvent("onclick", fun_click());
+    }
+</script>
+
+<body>
+
+    <input id="Button1" type="button" value="button" onclick="createButton();" />
+    <div id="mydiv">I'm a div</div>
+
+</body>

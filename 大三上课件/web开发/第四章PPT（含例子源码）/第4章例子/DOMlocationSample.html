@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+  
+</head>
+<body>
+    <script>
+  /*通过href或url传递参数的时候，例如window.navigate ("http://sample.htm?x=5;y=6;z=7")中，
+    传递了参数x、y、z的值，如何取到呢？用location.search就可以取到问号后的“x=5;y=6;z=7”
+    字符串，然后再用string对象的split方法分解字符串后即可得到参数x、y、z的值。*/
+        var s = location.search;
+        document.write("whole parameter is: " + s + "<p/>");//输出?x=5;y=6;z=7
+        s = s.substring(1); //得到x=5;y=6;z=7
+        var p = s.split(';');
+        for (var i = 0; i < p.length; i++)
+            document.write(p[i] + "<p/>"); //p[0]="x=5"  p[1]="y=6" p[2]="z=7"
+
+    </script>
+</body>
+</html>

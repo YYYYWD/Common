@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>新建网页 1</title></head>
+
+<body>
+    <input type="text" name="myText" title="输入4位字符串" pattern="\d{4}$" placeholder="输入4位字符串" required="required" />
+    <input type="text" name="creditcardnumber" pattern="[0-9]{16}" title="16 digits credit card number" />
+
+    <input type="range" name="kidAgeCheck" min="0" max="100" step="5" />
+
+
+</body>
+
+</html>
+<script type="text/javascript">
+    myText.onchange = function () {
+        if (myText.validity.valueMissing || myText.validity.patternMismatch) { alert('请输入4位字符串！'); myText.focus(); }
+    }
+    creditcardnumber.onchange = function () {
+        if (creditcardnumber.validity.patternMismatch) { alert('输入不合法！'); creditcardnumber.focus(); }
+    }
+
+</script>

@@ -1,0 +1,25 @@
+<html><head><title>新建网页 2</title>
+    <script type="text/javascript">
+        var fso = new ActiveXObject("Scripting.FileSystemObject")
+        var fe = fso.FolderExists("C:\\Bonus");  //测试文件夹是否存在
+        if (!fe) {
+            fso.CreateFolder("C:\\Bonus");		//在C盘创建一个文件夹
+            alert("I have create a new folder c:\\Bonus");
+        }
+        if (confirm("do you want to delete folder c:\\Bonus?"))
+            fso.DeleteFolder("C:\\Bonus");		// 删除创建的文件夹
+        fso.CopyFile("c:\\1.jpg", "d:\\1.tmp", true);	//复制文件
+        // 创建新文件，写入文本
+        var tf = fso.CreateTextFile("d:\\testfile.txt", true);
+        tf.WriteLine("Testing 1, 2, 3.");	// 填写数据，并增加换行符
+        tf.WriteBlankLines（3）;				// 增加3个空行
+        tf.Write("This is a test.");			// 填写一行，不带换行符
+        tf.Close();							// 关闭文件
+        // 打开文件,读取文件内容
+        var ForReading = 1;
+        var ts = fso.OpenTextFile("d:\\testfile.txt", ForReading);
+        s = ts.ReadLine();						// 读取文件一行内容到字符串
+        alert("File contents = '" + s + "'");	// 显示字符串信息
+        ts.Close();							// 关闭文件
+    </script>
+</head><body></body></html>

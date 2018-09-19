@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html><head><title></title>
+    <script src="js/jquery-2.2.0.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("table tr:nth-child(even)").addClass("alternateColor");
+            $("#mydiv").css("background-color", "red");
+            $("#Button1").bind("click",function(){ //绑定click事件
+                $("#mydiv").html("I'm a good student");   //单击ID为Button1的按钮
+                $("#Button1").val("OK");   //单击ID为Button1的按钮
+                var k=$("#mydiv").html(); //用jQuery的html方法获取或设置元素的值
+                alert(k);
+          });
+        });
+    </script>
+    <style type="text/css">
+        td { border:solid 1px #c1c1c1; width:100px; text-align:center; height:25px;}
+        th{ background-color:#0070bf; color:white; height:30px; }
+        table { border-collapse:collapse; border:solid 1px #c1c1c1; }
+        .alternateColor{ background-color:#fbffcd;}
+    </style>
+</head>
+<body>
+    <div id="mydiv">jQuery example</div>
+    <div>
+        <table  id="mytable">
+         <tr><th>姓名</th><th>班级</th><th>成绩</th></tr>
+         <tr><td>songyan</td><td>class1</td><td>98</td></tr>
+         <tr><td>zhangsan</td><td>class2</td><td>95</td></tr>
+         <tr><td>lisi</td><td>class1</td><td>100</td></tr>
+         <tr><td>wangwu</td><td>class2</td><td>98</td></tr>
+         <tr><td>zhaoliu</td><td>class2</td><td>78</td></tr>
+        </table>
+    </div>
+    <input id="Button1" type="button" value="button" />
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+﻿<html>
+<head>
+<title>图片上传</title>
+<script type="text/javascript">
+   function WH_Show(f){
+   obj=document.createElement("IMG");
+   obj.src=f.value;
+   if(obj.width>640 || obj.height>480){
+       alert("图片太大，请上传小于x480的图片。")
+   }
+   else{
+  document.getElementById('sub').innerHTML='<INPUT TYPE="submit" NAME="Submit" VALUE="提交">'
+       }
+   }
+</script>
+
+</head>
+<body>
+<FORM NAME="form1" METHOD="post" ACTION="upfile.aspx" ENCTYPE="multipart/ form-data" >
+<INPUT TYPE="hidden" size="40" NAME="act" VALUE="upload">
+<input type="file" onchange="WH_Show(this)"> 
+<div ID="sub"></div> 
+</FORM></body></html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>无标题页</title><style>
+                           h4,table,div {text-align:center; }
+                       </style>
+</head>
+<body id="mybody">
+    <h4 id="myH" >this is a text title </h4>
+    <p id="myP" ><b>段落文本</b></p>
+    <table id="myT" bgcolor="yellow"  border="1">
+        <caption id="myCaption">
+            DOM 树节点示例</caption>
+        <tr id="tr1">
+            <td style="width: 100px">table(1,1)</td>
+            <td id="myid" style="width: 100px">
+                <hr />
+            </td>
+            <td style="width: 100px">table(1,3)</td>
+        </tr>
+        <tr id="tr2">
+            <td style="width: 100px">
+                <div id="oDiv" onclick="alert('click');"
+                    onmouseover="this.style.color='#0000FF';"
+                    onmouseout="this.style.color='#FF0000';">
+                    I am a Div
+                </div>
+            </td>
+            <td style="width: 100px">
+                <img src="ad1.jpg" /></td>
+            <td style="width: 100px">table(2,3)</td>
+        </tr>
+        <tr id="tr3">
+            <td style="width: 100px">table(3,1)&nbsp;</td>
+            <td style="width: 100px">
+                <input id="Button1" type="button" value="button" onclick="dom_ example();" /></td>
+            <td style="width: 100px">table(3,3)</td>
+        </tr>
+    </table>
+    <script>
+        //1.对ID为myT的table所设置的所有属性进行循环，读取并显示出来
+        for(var i=0;i<myT.attributes.length;i++){
+            if(myT.attributes[i].specified){
+                alert(myT.attributes[i].nodeName+"="+myT.attributes[i].nodeValue);
+            }
+        }
+   
+        //2.将表格id为tr1的第行和id为tr2的第行进行交换
+        tr1.swapNode(tr2);
+
+        //3. 将id为myH的标题文本换成另外一个节点(前面创建的nod2或mydiv)
+        myH.replaceNode(myH.parentNode);
+  
+        //4.将oDiv的属性复制给第二步中创建的元素mydiv，但ID属性不复制。将鼠标在mydiv上移
+        //动将会发现事件属性也被复制
+        mydiv. mergeAttributes(oDiv,true);  
+        // 清除mydiv的属性可用mydiv.clearAttributes(); 但不清除事件属性
+
+        //5.对于表格第三行的tr3来说，有三个单元格，即有三个子节点
+        if( tr3.hasChildNodes()){
+            //返回头节点(第一个单元格)中的内容
+            alert('firstChild='+tr3.firstChild.innerHTML);       
+            //返回最后一个节点(第三个单元格)中的内容
+            alert('lastChild='+tr3.lastChild.innerHTML);
+            for (i=0; i<tr3.childNodes.length; i++) {  //对所有子节点循环
+                var myrow=tr3.childNodes(i); //得到每个子节点对象，即每个单元格对象
+                alert(myrow.innerHTML); //显示每个单元格中的标记元素信息
+                //返回同胞节点（单元格）中的内容
+                if(i==0)alert(myrow.nextSibling.innerHTML);
+                //设置最后一个单元格的内容为一个超链接
+                if(i==tr3.childNodes.length-1) 
+                    myrow.innerHTML="<A href='#'>I am a Hyperlink </A>";
+            }  
+        } 
+        
+    </script>
+</body>
+</html>

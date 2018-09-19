@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html><head><title></title></head>
+<body>
+    <input id="btnMoveWin" type="button" value="Move Window">
+    <input id="btnAnimateWin" type="button" value="Animate Window">
+</body>
+
+<script type="text/javascript">
+    btnMoveWin.onclick = function () {
+        //screenLeft和screenTop属性返回窗口相对于屏幕的X和Y坐标。
+        window.moveTo(screenTop + 10, screenTop + 5);
+        alert(window.outerWidth + "," + window.outerHeight);
+        window.status = "我是状态栏文本；";
+        alert("请看浏览器状态栏");
+        window.scrollTo(10,40);
+        window.navigate("http://www.qq.com"); //导航到另外一个页面，经常使用的功能。
+    }
+    btnAnimateWin.onclick = function () {
+        
+        for(var i=0; i<window.screen.height; i++){
+                window.moveTo(i,i);
+        }
+         window.moveTo(0,0);
+
+    }
+
+</script>
+</html>
+
+

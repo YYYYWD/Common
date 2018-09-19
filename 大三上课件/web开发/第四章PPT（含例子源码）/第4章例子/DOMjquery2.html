@@ -1,0 +1,38 @@
+﻿<html><head><title></title></head>
+<script> function $(id) { return document.getElementById(id); } </script>
+<body>
+
+<table id="mytable"  border="1" style="width:"50%">
+<script>
+    // 动态生成8行16列表格
+    var rows = 8; cols = 16;
+    for (var i = 1; i <= rows; i++) {
+        document.write("<tr>");
+        for (var j = 1; j <= cols; j++) {
+            document.write("<td>" + i + "," + j + "</td>");
+        }
+        document.write("</tr>"); 
+    }
+</script>
+</table>
+<script>
+    var TableRows = $("mytable").rows.length; //得到表格的行数
+    var TableCols = $("mytable").rows.item(0).cells.length;//得到表格的列数
+
+    for (var r = 0; r < TableRows; r++) {//对表格每一行进行循环
+        if (r % 2 == 0) {
+            var tabr = $("mytable").rows.item(r); //获取表格的行对象
+            tabr.style.backgroundColor = "green";
+        }
+        for (var c = 0; c < TableCols; c++) {
+            $("mytable").rows.item(r).cells(c).innerHTML = "[" + r + "," + c + "]";
+            //$("mytable").rows[r].cells[c].innerHTML = "[" + r + "," + c + "]"; 这行功能同上
+        }
+    }
+</script>
+</body>
+</html>
+
+
+
+
