@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "graphics.h": "c",
+        "kernel.h": "c",
+        "stddef.h": "c",
+        "inttypes.h": "c"
+    }
+}
