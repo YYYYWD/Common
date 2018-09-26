@@ -62,20 +62,21 @@ int xx0,yy0,xx1,yy1;
 
 void main(void *pv)
 {
-    xx0=0;
-    yy0=0;
-    xx1=500;
-    yy1=500;
-    printf("This is task foo with tid=%d\r\n", task_getid()); 
+   
+    //printf("This is task foo with tid=%d\r\n", task_getid()); 
     
     init_graphic(0x143); //进入图形界面
+    input();
     //DDAline2(xx0,yy0,xx1,yy1,RGB(255,255,255));
-    //test1();
-    Bresenham(300,20,0,0,RGB(255,255,255));
+    test3();
+    //DDAline2(60,0,500,0,RGB(255,255,255));
+    //Bresenham(60,0,500,0,RGB(255,255,255));
     //test1();
     //test2();
-    //Mid_line(0,00,30,500,RGB(255,255,255));
-
+    //Mid_line1(500,0,0,400,RGB(255,255,255));
+    //Mid_line1(60,0,500,0,RGB(255,255,255));
+    //test2();
+    printf("%d %d %d %d",xx0,yy0,xx1,yy1);
     task_exit(0);
     
 }

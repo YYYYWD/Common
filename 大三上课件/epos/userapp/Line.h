@@ -17,6 +17,9 @@
 void DDAline2(int x0,int y0,int x1,int y1,COLORREF cr);
 void Bresenham(int x0,int y0,int x1,int y1,COLORREF cr);
 void Mid_line(int x0,int y0,int x1,int y1,COLORREF cr);
+void Mid_line1(int x0,int y0,int x1,int y1,COLORREF cr);
+void Line_Midpoint(int x1, int y1, int x2, int y2, COLORREF color);
+void input();
 void test1();//测试DDA
 void test2();//测试Bresenham
 void test3();//测试中点画法
