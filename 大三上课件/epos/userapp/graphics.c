@@ -337,6 +337,7 @@ int init_graphic(int mode)
 
     oldmode = getVBEMode();
     return setVBEMode(mode|(g_graphic_dev.Linear?0x4000:0));
+    
 }
 
 int exit_graphic()

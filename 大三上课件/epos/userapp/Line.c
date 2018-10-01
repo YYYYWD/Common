@@ -7,12 +7,14 @@
 #include <netinet/in.h>
 #include <stdlib.h>
 #include "graphics.h"
+
 #include"Line.h"
+
 
 #define ABS(a) ((a) >= 0 ? (a) : -(a))
 
 
-extern int xx0,yy0,xx1,yy1;
+extern int xx0,yy0,xx1,yy1,my_control;
 void DDAline2(int x0,int y0,int x1,int y1,COLORREF cr)
 {
     float increx, increy, x, y;
@@ -37,7 +39,7 @@ void DDAline2(int x0,int y0,int x1,int y1,COLORREF cr)
 
 void Bresenham(int x0,int y0,int x1,int y1,COLORREF cr)
 {
-     printf("------------------------\n");
+   
     int x,y,dx,dy,e,i,temp;
     int increx,increy;
     x=x0;
@@ -103,166 +105,72 @@ void Bresenham(int x0,int y0,int x1,int y1,COLORREF cr)
     }
 }
 
-void Mid_line(int x0,int y0,int x1,int y1,COLORREF cr)
-{
-   
-    int x,y,a,b,d,d1,d2;
-    x=x0;
-    y=y0;
-    a=y0-y1;
-    b=x1-x0;
-    d=2*a+b;
-    d1=2*a;
-    d2=2*(a+b);
-    setPixel(x,y,cr);
-    while(x<x1)
-    {
-        if(d<0)
-        {x++;y++;d=d+d2;}
-        else
-        {
-            x=x++;
-            d=d+d1;
-        }
-        setPixel(x,y,cr);
-    }
 
-}
-void Mid_line1(int x0,int y0,int x1,int y1,COLORREF cr)
-{
-    int x,y,a,b,d,d1,d2,increx,increy,dx,dy;
-    x=x0;
-    y=y0;
-    a=y0-y1;
-    b=x1-x0;
-
-    dx=ABS(x1-x0);
-    dy=ABS(y1-y0);
-    //printf("(%d,%d)\n",dx,dy);
-    if(dx==0)
-    {
-        increx=0;
-    }
-    else
-    {
-        increx=(x1-x0)/dx;
-    }
-     if(dy==0)
-    {
-        increy=0;
-    }
-    else
-    {
-        increy=(y1-y0)/dy;
-    }
-    
-
-    if(dx>=dy)
-    {
-        d=2*increx*a+increy*b;
-        d1=2*increx*a;
-        d2=2*a*increx+2*b*increy;
-        setPixel(x,y,cr);
-        while(x!=x1)
-        {
-            if(d<0)
-            {
-                x=x+increx;
-                y=y+increy;
-                d+=d2;
-            }
-            else
-            {
-                x=x+increx;
-                d+=d1;
-            }
-            setPixel(x,y,cr);
-        }
-    }
-    else
-    {
-        d=a*increx+2*b*increy;
-        d1=2*b*increy;
-        d2=2*increy*b+2*increx*a;
-        setPixel(x,y,cr);
-        while(y!=y1)
-        {
-            if(d<0)
-            {
-               y=y+increy;
-               d+=d1;
-            }
-            else
-            {
-                x=x+increx;
-                y=y+increy;
-                d+=d2;
-            }
-            setPixel(x,y,cr);
-        }
-    }
-
-
-   
-}
-void test1()
+void Line_test1()
 {
   while(1)
     {
+        lcd_put_ascii(50,50,'A',RGB((xx0+xx1)%256,yy0%256,yy1%256));
         int key=getchar();
-        if(key==0x2E63)//(C)
+        if(key==0x0F09)
+        {
+            my_control++;
+            DDAline2(xx0,yy0,xx1,yy1,RGB(0,0,0));
+            break;
+        }
+        else if(key==0x2E63)//(C)
         {
               DDAline2(xx0,yy0,xx1,yy1,RGB(0,0,0));
-              input();
-              DDAline2(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+              input_line();
+              DDAline2(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x4800)//上
         {
             DDAline2(xx0,yy0,xx1,yy1,RGB(0,0,0));
             yy1=yy1+5;
-            DDAline2(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+            DDAline2(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x5000)//下
         {
             DDAline2(xx0,yy0,xx1,yy1,RGB(0,0,0));
             yy1=yy1-5;
-            DDAline2(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+            DDAline2(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x4B00)//左
         {
             DDAline2(xx0,yy0,xx1,yy1,RGB(0,0,0));
             xx1=xx1-5;
-            DDAline2(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+            DDAline2(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
          else if(key==0x4D00)//右
         {
             DDAline2(xx0,yy0,xx1,yy1,RGB(0,0,0));
             xx1=xx1+5;
-            DDAline2(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+            DDAline2(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x1177)//上
         {
             DDAline2(xx0,yy0,xx1,yy1,RGB(0,0,0));
             yy0=yy0+5;
-            DDAline2(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+            DDAline2(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x1F73)//下
         {
             DDAline2(xx0,yy0,xx1,yy1,RGB(0,0,0));
             yy0=yy0-5;
-            DDAline2(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+            DDAline2(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x1E61)//左
         {
             DDAline2(xx0,yy0,xx1,yy1,RGB(0,0,0));
             xx0=xx0-5;
-            DDAline2(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+            DDAline2(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
          else if(key==0x2064)//右
         {
             DDAline2(xx0,yy0,xx1,yy1,RGB(0,0,0));
             xx0=xx0+5;
-            DDAline2(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+            DDAline2(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x011B)
         {
@@ -271,125 +179,137 @@ void test1()
         }
     }
 }
-void test2()
+void Line_test2()
 {
   while(1)
     {
         int key=getchar();
-        if(key==0x2E63)//(C)
+         if(key==0x0F09)
+        {
+            my_control++;
+            Bresenham(xx0,yy0,xx1,yy1,RGB(0,0,0));
+            break;
+        }
+        else if(key==0x2E63)//(C)
         {
               Bresenham(xx0,yy0,xx1,yy1,RGB(0,0,0));
-              input();
-              Bresenham(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+              input_line();
+              Bresenham(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x4800)//上
         {
            Bresenham(xx0,yy0,xx1,yy1,RGB(0,0,0));
             yy1=yy1+5;
-           Bresenham(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+           Bresenham(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x5000)//下
         {
            Bresenham(xx0,yy0,xx1,yy1,RGB(0,0,0));
             yy1=yy1-5;
-            Bresenham(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+            Bresenham(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x4B00)//左
         {
             Bresenham(xx0,yy0,xx1,yy1,RGB(0,0,0));
             xx1=xx1-5;
-            Bresenham(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+            Bresenham(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
          else if(key==0x4D00)//右
         {
             Bresenham(xx0,yy0,xx1,yy1,RGB(0,0,0));
             xx1=xx1+5;
-           Bresenham(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+           Bresenham(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x1177)//上
         {
            Bresenham(xx0,yy0,xx1,yy1,RGB(0,0,0));
             yy0=yy0+5;
-           Bresenham(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+           Bresenham(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x1F73)//下
         {
             Bresenham(xx0,yy0,xx1,yy1,RGB(0,0,0));
             yy0=yy0-5;
-           Bresenham(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+           Bresenham(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x1E61)//左
         {
             Bresenham(xx0,yy0,xx1,yy1,RGB(0,0,0));
             xx0=xx0-5;
-           Bresenham(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+           Bresenham(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
          else if(key==0x2064)//右
         {
             Bresenham(xx0,yy0,xx1,yy1,RGB(0,0,0));
             xx0=xx0+5;
-            Bresenham(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+            Bresenham(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         
     }
 }
-void test3()
+void Line_test3()
 {
 while(1)
     {
         int key=getchar();
-        if(key==0x2E63)//(C)
+         if(key==0x0F09)
         {
+            my_control++;
              Line_Midpoint(xx0,yy0,xx1,yy1,RGB(0,0,0));
-              input();
-            Line_Midpoint(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+            break;
+        }
+        else if(key==0x2E63)//(C)
+        {
+            Line_Midpoint(xx0,yy0,xx1,yy1,RGB(0,0,0));
+            input_line();
+            Line_Midpoint(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x4800)//上
         {
             Line_Midpoint(xx0,yy0,xx1,yy1,RGB(0,0,0));
             yy1=yy1+5;
-          Line_Midpoint(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+          Line_Midpoint(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x5000)//下
         {
             Line_Midpoint(xx0,yy0,xx1,yy1,RGB(0,0,0));
             yy1=yy1-5;
-           Line_Midpoint(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+           Line_Midpoint(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x4B00)//左
         {
             Line_Midpoint(xx0,yy0,xx1,yy1,RGB(0,0,0));
             xx1=xx1-5;
-            Line_Midpoint(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+            Line_Midpoint(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
          else if(key==0x4D00)//右
         {Line_Midpoint(xx0,yy0,xx1,yy1,RGB(0,0,0));
             xx1=xx1+5;
-            Line_Midpoint(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+            Line_Midpoint(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x1177)//上
         {
             Line_Midpoint(xx0,yy0,xx1,yy1,RGB(0,0,0));
             yy0=yy0+5;
-            Line_Midpoint(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+            Line_Midpoint(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x1F73)//下
         {
             Line_Midpoint(xx0,yy0,xx1,yy1,RGB(0,0,0));
             yy0=yy0-5;
-           Line_Midpoint(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+           Line_Midpoint(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x1E61)//左
         {
             Line_Midpoint(xx0,yy0,xx1,yy1,RGB(0,0,0));
             xx0=xx0-5;
-            Line_Midpoint(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+            Line_Midpoint(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
          else if(key==0x2064)//右
         {
            Line_Midpoint(xx0,yy0,xx1,yy1,RGB(0,0,0));
             xx0=xx0+5;
-            Line_Midpoint(xx0,yy0,xx1,yy1,RGB(xx0%255,yy0%255,xx1%255));
+            Line_Midpoint(xx0,yy0,xx1,yy1,RGB((xx0+xx1)%256,yy0%256,yy1%256));
         }
         else if(key==0x011B)
         {
@@ -460,7 +380,7 @@ void Line_Midpoint(int x1, int y1, int x2, int y2, COLORREF color)
 }
  
 
-void input()
+void input_line()
 {
     int i;
     int count[4]={0};
@@ -537,3 +457,5 @@ void input()
     xx1=count[2];
     yy1=count[3];
 }
+
+

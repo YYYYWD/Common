@@ -412,29 +412,29 @@ LOAD ../lib/tlsf/tlsf.o
 OUTPUT(eposkrnl.out pei-i386)
 
 .debug_info     0x00000000    0x12400
- .debug_info    0x00000000      0xe63 ide.o
- .debug_info    0x00000e63      0xab0 pci.o
- .debug_info    0x00001913      0xab9 vm86.o
- .debug_info    0x000023cc      0x6ea kbd.o
- .debug_info    0x00002ab6      0x95a timer.o
- .debug_info    0x00003410     0x3618 machdep.o
- .debug_info    0x00006a28      0x9a0 task.o
- .debug_info    0x000073c8      0x1d4 mktime.o
- .debug_info    0x0000759c      0x1c0 sem.o
- .debug_info    0x0000775c      0x8a3 page.o
- .debug_info    0x00007fff      0xe19 startup.o
- .debug_info    0x00008e18      0x5e1 frame.o
- .debug_info    0x000093f9      0x3d9 kmalloc.o
- .debug_info    0x000097d2     0x26af dosfs.o
- .debug_info    0x0000be81     0x1125 pe.o
- .debug_info    0x0000cfa6      0x229 printk.o
- .debug_info    0x0000d1cf      0xda3 bitmap.o
- .debug_info    0x0000df72      0x359 ../lib/softfloat.o
- .debug_info    0x0000e2cb      0x5a1 ../lib/string.o
- .debug_info    0x0000e86c      0x2d4 ../lib/memcpy.o
- .debug_info    0x0000eb40      0x18e ../lib/memset.o
- .debug_info    0x0000ecce      0x9b3 ../lib/snprintf.o
- .debug_info    0x0000f681     0x2c7b ../lib/tlsf/tlsf.o
+ .debug_info    0x00000000      0xe5d ide.o
+ .debug_info    0x00000e5d      0xaaa pci.o
+ .debug_info    0x00001907      0xab3 vm86.o
+ .debug_info    0x000023ba      0x6e4 kbd.o
+ .debug_info    0x00002a9e      0x954 timer.o
+ .debug_info    0x000033f2     0x3618 machdep.o
+ .debug_info    0x00006a0a      0x99a task.o
+ .debug_info    0x000073a4      0x1ce mktime.o
+ .debug_info    0x00007572      0x1ba sem.o
+ .debug_info    0x0000772c      0x89d page.o
+ .debug_info    0x00007fc9      0xe13 startup.o
+ .debug_info    0x00008ddc      0x5db frame.o
+ .debug_info    0x000093b7      0x3d3 kmalloc.o
+ .debug_info    0x0000978a     0x26a9 dosfs.o
+ .debug_info    0x0000be33     0x111f pe.o
+ .debug_info    0x0000cf52      0x223 printk.o
+ .debug_info    0x0000d175      0xd9d bitmap.o
+ .debug_info    0x0000df12      0x353 ../lib/softfloat.o
+ .debug_info    0x0000e265      0x59b ../lib/string.o
+ .debug_info    0x0000e800      0x2ce ../lib/memcpy.o
+ .debug_info    0x0000eace      0x188 ../lib/memset.o
+ .debug_info    0x0000ec56      0x9ad ../lib/snprintf.o
+ .debug_info    0x0000f603     0x2c75 ../lib/tlsf/tlsf.o
 
 .debug_abbrev   0x00000000     0x2e00
  .debug_abbrev  0x00000000      0x1ae ide.o

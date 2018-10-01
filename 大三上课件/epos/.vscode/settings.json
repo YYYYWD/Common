@@ -7,6 +7,11 @@
         "mman.h": "c",
         "syscall.h": "c",
         "time.h": "c",
-        "line.h": "c"
+        "line.h": "c",
+        "stdlib.h": "c",
+        "in.h": "c",
+        "math.h": "c",
+        "font_8x16.h": "c",
+        "ellipse.h": "c"
     }
 }
