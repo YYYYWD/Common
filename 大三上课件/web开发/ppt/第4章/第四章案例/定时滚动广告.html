@@ -1,0 +1,96 @@
+<HTML><HEAD><TITLE></TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<STYLE type="text/css">
+TD {FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: 宋体}
+a{ color: #000000;}
+A:link {TEXT-DECORATION: none}
+A:visited {TEXT-DECORATION: none}
+A:active {TEXT-DECORATION: none}
+A:hover {TEXT-DECORATION: underline}
+</STYLE>
+<META content="MSHTML 6.00.2800.1515" name=GENERATOR></HEAD>
+<BODY leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<TABLE id="table1" style="BORDER-COLLAPSE: collapse" cellPadding=1 width=468 border=0>
+  <TBODY>
+  <TR>
+     <TD width="380">
+      <DIV id="so1">
+      <table width="380" border="0" align="center" cellpadding="0" cellspacing="0">
+        <TBODY> <tr>         
+		<td height="20"><a href="url1" target="_blank">重庆大学</a></td>
+		<td height="20"><a href="url2" target="_blank">精美图片</a></td>
+		<td height="20"><a href="url3" target=_blank>学习论坛</a></td>
+		<td height="20"><a href="url4" target=_blank>电视娱乐</a></td>
+		<td height=20><a href="url5" target=_blank>娱乐星闻</a></td>
+		<td height=20><a href="url6" target=_blank>happyb中文</a></td> 
+		</tr> </TBODY>
+        </table>
+       
+      <TABLE width=380 cellSpacing=0 cellPadding=0 border=0>
+        <TBODY><tr> 
+            <td height=20><a href="url1" target=_blank>小木屋</a></td>
+          <td height=20><a href="url2" target=_blank>易物在线超</a></td>
+          <td height=20><a href="url3" target=_blank>通州论坛</a></td>
+          <td height=20><a href="ur14" target=_blank>QQ宝典资源</a></td>
+          <td height=20><a href="url5" target=_blank>冰霄娛樂</a></td>
+          <td height=20><a href="url6" target=_blank>时尚元素网</a></td>
+           </tr></TBODY>
+        </table>
+        
+      <TABLE width=380 cellSpacing=0 cellPadding=0 border=0>
+        <TBODY><tr> 
+          <td height=20><a href="url1" target=_blank>动感FLASH</a></td>
+         <td height=20><a href="url2" target=_blank>在线MTV欣</a></td>
+         <td height=20><a href="url3" target=_blank> MP3音乐</a></td>
+         <td height=20><a href="url4" target=_blank>心动游戏网</a></td>
+         <td height=20><a href="url5" target=_blank>07007音乐</a></td>
+         <td height=20><a href="url6" target=_blank>图片广场</a></td>
+         </tr></TBODY>
+         </TABLE>
+      </DIV>
+<DIV id=so2 style="Z-INDEX:1;VISIBILITY:hidden;POSITION:absolute">
+</DIV></TD></TR></TBODY></TABLE>
+<SCRIPT type="text/javascript">
+marqueesHeight=20;
+stopscroll=false;
+document.all.so1.scrollTop=0;
+with(so1){
+style.width=380;
+style.height=marqueesHeight;
+style.overflowX='visible';
+style.overflowY='hidden';
+noWrap=true;
+onmouseover=new Function('stopscroll=true');
+onmouseout=new Function('stopscroll=false');
+}
+
+preTop=0; currentTop=0; stoptime=0; //参数初始化
+
+function init_srolltext(){
+document.all.so2.innerHTML='';
+document.all.so2.innerHTML+=document.all.so1.innerHTML;
+document.all.so1.innerHTML=document.all.so2.innerHTML+document.all.so2.innerHTML;
+setInterval('scrollUp()',1); //设置每秒钟就更换一次广告
+}
+
+function scrollUp(){
+if(stopscroll==true) return;
+currentTop+=1;
+if(currentTop==21) {
+stoptime+=1;
+currentTop-=1;
+if(stoptime==150) {
+currentTop=0;
+stoptime=0;  }
+}
+else {
+preTop=document.all.so1.scrollTop;
+document.all.so1.scrollTop+=1;
+if(preTop==document.all.so1.scrollTop){
+document.all.so1.scrollTop=document.all.so2.offsetHeight-marqueesHeight;
+document.all.so1.scrollTop+=1;}
+}
+}
+setTimeout('init_srolltext()', 10000) //页面显示秒钟后才开始广告条滚动
+</script>
+</BODY></HTML>

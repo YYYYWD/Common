@@ -1,0 +1,46 @@
+start.htm文件内容如下：
+<html><head>
+<title>通过URL传递参数</title>
+</head>
+<body>
+<script type="text/javascript">
+window.open("index.htm?email=pp@cqu.edu.cn&name=wcl","_self");
+</script>
+</body>
+</html>
+index.htm文件内容如下：
+<!-- 下面给出了一个带有详细注释的具体示例源代码。注意: querystring是一个实用函数，可以在网页中直接引用，然后在网页中使用Request["名称"] 即可获取用户输入的有关信息内容。-->
+
+<Html><Head>
+<Meta http-equiv="Content-Type"content="text/html; charset=gb2312" >
+<Title>示例</Title>
+<script type="text/javascript">
+function QueryString()
+{//构造参数对象并初始化
+var name,value,i;
+var str=location.href;//获得浏览器地址栏URL串
+var num=str.indexOf("?")
+str=str.substr(num+1);//截取“?”后面的参数串
+var arrtmp=str.split("&");//将各参数分离形成参数数组
+ for(i=0;i < arrtmp.length;i++){
+   num=arrtmp[i].indexOf("=");
+   if(num>0){
+    name=arrtmp[i].substring(0,num);//取得参数名称
+    value=arrtmp[i].substr(num+1);//取得参数值
+    this[name]=value;//定义对象属性并初始化
+   }
+ }
+}
+var Request=new QueryString();//使用new运算符创建参数对象实例
+</script>
+</Head >
+<Body>
+<script>
+var newElement=document.createElement("div");//创建div对象
+var str="<u>"+Request["name"]+"</u>,欢迎光临!<br>您的E-mail是:
+<u>"+Request["email"]+"</u>";//利用Request["字段名称"]获取参数内容
+newElement.innerHTML = str;
+document.body.appendChild(newElement);//向文档添加div对象
+</script>
+</Body>
+</Html>

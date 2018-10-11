@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testqwe1</title>
+</head>
+<body>
+    <ul id="ul1">
+        <li>
+            111123123qwe
+        </li>
+        <li>
+            222
+        </li>
+        <li>
+          333
+        </li>
+        <li>
+        444
+        </li>
+    </ul>
+    <br>
+    <input type="button" value="add" onclick="add1();">
+<script type="text/javascript">
+    function add1() {
+        var ul1=document.getElementById("ul1");
+        var li1=document.createElement("li");
+        var text1=document.createTextNode("5555");
+        li1.appendChild(text1);
+        ul1.appendChild(li1);
+    }
+</script>
+</body>
+</html>

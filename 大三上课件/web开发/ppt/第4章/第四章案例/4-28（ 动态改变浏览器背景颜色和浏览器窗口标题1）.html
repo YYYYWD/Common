@@ -1,0 +1,14 @@
+<html>
+<head><title>无标题页</title>
+</head>
+<body>
+<input id="myColor" type="text" value="red" > 
+<input id="mybut1" type="button" value="改变页面背景颜色"> 
+<input id="myTitle" type="text" value="新的窗口标题" >
+
+<input id="mybut2" type="button" value="改变浏览器窗口标题">
+<script language="javascript">
+     window.mybut1.onmousedown= function() {window.document.bgColor = window.myColor.value ;}
+     window.mybut2.onmousedown= function() {window.document.title=window.myTitle.value;} 
+</script>
+</body></html>

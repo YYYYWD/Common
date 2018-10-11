@@ -1,0 +1,20 @@
+<html><head>
+<script language="javascript">
+function sum(StartVal,EndVal){
+var ArgNum=sum.arguments.length;
+var i,s=0;
+if (ArgNum==0) { StartVal=1;EndVal=1000;}
+else if (ArgNum==1) EndVal=1000;
+for (i=StartVal;i<=EndVal;i++) s+=i;
+return s;
+}
+</script>
+</head>
+<body>
+<script language="javascript">
+// document.write 表示在浏览器中输出文本
+document.write("不给出参数调用函数sum:",sum(),"<br>");
+document.write("给出一个参数调用函数sum:",sum(500),"<br>");
+document.write("给出两个参数调用函数sum:",sum(1,50),"<br>");
+</script>
+</body></html>

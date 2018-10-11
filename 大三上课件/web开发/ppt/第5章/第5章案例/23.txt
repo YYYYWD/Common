@@ -1,0 +1,14 @@
+<script language="javascript">
+//var iNumber="100";
+//var anExpression = "(16 * 9 % 7)";
+
+var myexpression=prompt("enter an expression:");
+
+
+var total = eval(myexpression);
+
+(12345+2345)*Math.sin(0.12459)*Math.sqrt(2);
+
+//var total = eval(anExpression + "/" + iNumber); //等同于求(16 * 9 % 7)/100的值
+alert(total);// 将变量total 赋值为0.04。
+</script>

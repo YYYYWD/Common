@@ -1,0 +1,12 @@
+﻿<?xml version='1.0'?>
+<?xml-stylesheet type="text/xsl" href="ex_5_20.xsl"?>
+<root>
+  <x>green</x>
+  <y>
+    <x>blue1</x> <x>blue2</x>
+  </y>
+  <z>
+    <x>red1</x>  <x>red2</x>
+  </z>
+  <x>green</x>
+</root>

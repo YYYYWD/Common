@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<studentList>
+  <stu>
+    <sid>200202051001</sid>
+    <name>黎  佳</name>
+    <gender>男</gender>
+    <cName>02级财务(1)班</cName>
+  </stu>
+  <stu>
+    <sid>200202051002</sid>
+    <name>樊  娟</name>
+    <gender>女</gender>
+    <cName>02级财务(1)班</cName>
+  </stu>
+  <stu>
+    <sid>200202051003</sid>
+    <name>韦  威</name>
+    <gender>男</gender>
+    <cName>02级财务(1)班</cName>
+  </stu>
+</studentList>
+

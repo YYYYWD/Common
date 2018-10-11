@@ -1,0 +1,28 @@
+<HTML><HEAD><TITLE>First Document</TITLE>
+<script type="text/javascript">
+function getCookie(sName)  //从cookie中获取参数name的值
+{  // Cookie中的参数是以分号相隔的，例如"name=20;sex=male;color=red;"
+  var aCookie = document.cookie.split("; ");
+  for (var i=0; i < aCookie.length; i++)
+  { // 对存放在数组aCookie 中的每一个"参数名=参数值"进行循环，找到要获取参数值的参数名
+    var aCrumb = aCookie[i].split("=");
+    if (sName == aCrumb[0])      
+      return unescape(aCrumb[1]); //如果找到则返回参数值
+  }
+  return null; // Cookie中请求的参数名不存在时返回null
+}
+
+// name—参数, value—参数值, expires—失效日期, 
+//功能：蒋参数name的值value和失效日期expires写入一个cookie中
+function setCookie(name, value, expires)
+{   var expStr    = ( (expires == null) ? "" : ("; expires=" + expires) );
+	window.document.cookie = name + "=" + escape(value) + expStr;
+}
+</script>
+</HEAD>
+<BODY bgcolor=#FFFFCC>
+<Input id="yourName" type ="text" value = "Tim">
+<Input type ="button" value = "姓名保存到cookie" onclick="setCookie('name',yourName.value,'Sun May 27 22:04:25 UTC+0800 2008');">
+<Input id="GetName" type ="text" value = "">
+<Input type ="button" value = "从cookie中得到姓名" onclick="GetName.value=getCookie('name');">
+</BODY></html>

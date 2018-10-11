@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<?xml-stylesheet type="text/css"  href="ex_5_3.css" ?>
+<student>
+  <name class="c1">张三</name>
+  <name class="c2">李四</name>
+  <name class="c3">王五</name>
+</student>
+

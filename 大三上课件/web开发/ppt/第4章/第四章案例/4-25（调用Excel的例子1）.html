@@ -1,0 +1,12 @@
+<script language="javascript">
+var ExcelApp = new ActiveXObject("Excel.Application");  //启动创建对象的应用程序EXCEL
+var ExcelSheet = new ActiveXObject("Excel.Sheet");      //创建EXCEL工作表
+ExcelSheet.Application.Visible = true;             // 使Excel窗口可见
+// 将一些文本放置到表格的第一格中。
+ExcelSheet.ActiveSheet.Cells(1,1).Value = "This is column A, row 1";
+// 保存EXCEL到C:\TEST.XLS。
+ExcelSheet.SaveAs("C:\\TEST1.XLS");
+//用Quit 方法关闭Excel。
+ExcelApp.Quit(); 
+//可以找到C:\TEST1.XLS文件，检查其正确性
+</script>

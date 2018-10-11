@@ -1,0 +1,50 @@
+<html>
+<head><script language="JavaScript">
+sex=new Array();
+sex[0]="Male";
+sex[1]="Female";
+sele=0;
+sex_sele=0;
+function VertifyAndChgText(){
+  var Length=document.forms[0].length;
+  var Type,Empty=false;
+  for(var i=0;i<Length;i++){
+  Type=document.forms[0].elements[i].type;
+if (Type=="text")
+    if (document.forms[0].elements[i].value=="")
+      empty=true;
+  }
+  if (!Empty){
+    name="您的名字是"+document.forms[0].NameText.value+"\n";
+    alias="您的别名是"+document.forms[0].AliasText.value+"\n";
+    sex_1="您的性别是"+sex[sex_sele]+"\n";
+    area="您所在的地区是"+document.forms[0].area.options[sele].text+"\n";
+    exp="备注信息是"+document.forms[0].exp.value+"\n";
+    document.forms[0].info.value=name+alias+sex_1+area+exp;
+  }
+  else   alert("您的信息尚未完全输入!");
+  return Empty;
+}
+</script>
+</head>
+<body>
+<h3 align=center>请输入您的个人信息</h3>
+
+<form>
+您的姓名：<input type=text name="NameText" size=15><br>
+您的别名：<input type=text name="AliasText" size=15><br>
+您的性别：<input type="radio" name="sex" onClick="sex_sele=0">Male
+<input type="radio" name="sex" onClick="sex_sele=1">Female<br>
+你所在地区：<select name="area" onChange="sele=this.selectedIndex">
+<option value="1" selected >云南
+<option value="2">贵州
+<option value="3">四川
+<option value="4">西藏
+<option value="5">重庆</select><br>
+备注：<textarea name="exp" rows=4 cols=25></textarea><br><br><br>
+<input type=button value="提交信息" onClick="VertifyAndChgText()">
+<br>
+您已输入的信息是：<textarea name="info" rows=6 cols=30></textarea><r><br>
+</form>
+</body>
+</html>

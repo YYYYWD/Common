@@ -1,0 +1,106 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>具有超文本编辑功能的文本编辑框</title></head>
+<script language="javascript" >
+var WordApp;
+var wordflag=0;
+var myRange;
+
+function OpenWord() //在Word中编辑
+{
+  onerror=errormsg;
+  WordApp = new ActiveXObject("Word.Application");
+  WordApp.Application.Visible = true;
+  var mydoc=WordApp.Documents.Add("",0,1);
+  myRange =mydoc.Range(0,1)
+  if(myiframe.document.body.innerText=="")
+  {
+    myiframe.document.body.innerText=" ";
+  }
+  var sel=myiframe.document.body.createTextRange();
+  sel.select();
+  myiframe.document.execCommand('Copy');
+  sel.moveEnd('character');
+  myRange.Paste();
+  
+  WordApp.ActiveWindow.ActivePane.View.Type=3; //Word视图模式为页面
+  WordApp.Selection.EndKey(5);
+  WordApp.Selection.InsertBreak(7); // 插入分页符
+  WordApp.Selection.HomeKey (5);
+  WordApp.Selection.TypeText("重庆市房产面积测算报告书");
+
+}
+
+function LoadWord() //更新编辑文档
+{
+ onerror=errormsgl;
+ 
+ WordApp.Selection.WholeStory()
+ WordApp.Selection.Copy()
+ WordApp.Selection.Delete()
+ myRange.Paste()
+ newDocument()
+ myiframe.document.execCommand('Paste')
+
+ for(i=WordApp.Documents.Count;i>0;i--){
+ 	WordApp.Documents(i).Close(0);
+ }
+ WordApp.Application.quit() 
+}
+
+function errormsg()
+{
+  alert("请确认是否装有Word如果装有请确认\r是否IE的安全选项\"本地Intranet\"级别\r已被设为\"低\"否则将不能使用此功能,步骤如下:\r工具-\>Internet选项->安全\r-\>本地Intranet-\>自定义级别-\>第二项选为启用或提示");
+  return true;
+}
+
+function errormsgl()
+{
+ alert("Word没打开或者Word已经关闭!请打开Word编辑后再更新!")
+ return true;
+}
+
+function initpage() //初始化正文编辑器
+  {
+ if (document.all.myiframe) {
+ myiframe.document.designMode="On";
+ myiframe.document.open();
+ myiframe.document.write("<div><br></div>");
+ myiframe.document.close();
+ }
+  }
+
+function newDocument() //清除正文内容
+ {
+ myiframe.document.designMode="On";
+ myiframe.document.open();
+ myiframe.document.write("");
+ myiframe.document.close();
+ myiframe.focus()
+ }
+ 
+ var format="HTML"
+function swapModes() //切换编辑状态
+ {
+	if (format=="HTML") {
+		myiframe.document.body.innerText = myiframe.document.body.innerHTML
+          myiframe.document.body.style.fontFamily = "arial"
+		myiframe.document.body.style.fontSize = "10pt"
+		format="Text"
+ 	}
+	else {
+   		 myiframe.document.body.innerHTML = myiframe.document.body.innerText
+           myiframe.document.body.style.fontFamily = ""
+   		 myiframe.document.body.style.fontSize =""
+   		 format="HTML"
+ 	}
+}
+</script>
+<body onload="initpage();" bgcolor="#FFFFCC" > 
+<input id="B0" type="button" value="切换编辑状态" onclick="swapModes();">
+<input id="B1" type="button" value="打开Word编辑" onclick="OpenWord();">
+<input id="B2" type="button" value="从Word中调入" onclick="LoadWord();">
+<input id="B3" type="button" value="清空" onclick="newDocument();"><br />
+<IFRAME id="myiframe" marginWidth=2 marginHeight=2 width="50%" height="50%" ></IFRAME>
+</body>
+</html>

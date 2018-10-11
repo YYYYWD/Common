@@ -1,0 +1,15 @@
+<script language="javascript">
+// 具有相同值的两个基本字符串。
+var string1 = "Hello", string2 = "Hello";
+// 具有相同值的两个String 对象。
+var StringObject1 = new String(string1),  StringObject2 = new String(string2);
+var myBool=(string1 == string2);
+alert(myBool); // 消息框显示比较结果为true
+var myBool=(StringObject1 == StringObject2);
+alert(myBool); // 消息框显示比较结果为false
+//要比较String 对象的值，用toString() 或者valueOf( ) 方法
+var myBool=(StringObject1.valueOf() == StringObject2);
+alert(myBool); // 消息框显示比较结果为true
+var myBool=(StringObject1 === StringObject2);
+alert(myBool); // 消息框显示比较结果为true
+</script>

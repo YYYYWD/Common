@@ -1,0 +1,15 @@
+<html><head><title>函数示例</title></head>
+<script language="JavaScript">
+ function factor(num)
+ {  var i,fact=1;
+    for (i=1;i<num+1;i++) fact=i*fact; 
+    return fact;  
+ } 
+ </script>  
+ <body>
+ <script language="JavaScript">
+ //调用factor函数  
+ alert("5的阶乘="+ factor(5));  //显示“的阶乘=120”
+ </script>
+ </body>
+ </html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<?xml-stylesheet type="text/xsl" href="ex_5_8.xsl"?>
+<document>
+  <resume id="007">
+    <name>李敏</name>
+    <sex>男</sex>
+    <birthday>1971-12-30</birthday>
+    <skill>WEB开发</skill>
+    <skill>游戏编程</skill>
+    <cellphone>13983911111</cellphone>
+    <grade>50</grade>
+  </resume>
+  <resume id="008">
+    <name>王甜珠</name>
+    <sex>女</sex>
+    <birthday>1981-01-30</birthday>
+    <skill>舞蹈</skill>
+    <grade>40</grade>
+  </resume>
+</document>

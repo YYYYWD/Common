@@ -1,0 +1,32 @@
+<script language="javascript">
+// 设置变量howLong 为11。
+var howLong = "Hello World".length;  
+//锚点方法anchor()。使用anchor作用与Html中(A Name="")一样。
+//格式为：string.anchor(anchorName)。
+//创建一个名为start的锚点，该处显示文字"开始"。
+var astr="开始";
+var aname=astr.anchor("start");
+document.write(aname);
+
+//超链接方法link()。用于创建一个超链接, 与Html中(A href="")作用相同。
+//格式为:string.link(URL)。
+var hstr="重庆大学";
+var hname=hstr.link("http://www.cqu.edu.cn");
+document.write(hname);
+
+// substring()方法: substring(start,end)。它返回字符串的一部分，该字符串包含从start 直到//end（不包含end）的子字符串。
+//substring 方法使用start 和end 两者中的较小值作为子字符串的起始点。例如，//strvar.substring(0, 3) 和strvar.substring(3, 0) 将返回相同的子字符串。
+//如果start 或end 为NaN 或负数，那么它将被替换为0。
+//子字符串的长度等于start 和end 之差的绝对值。例如，在strvar.substring(0, 3) 和//strvar.substring(3, 0) 中，返回的子字符串的长度为3。
+
+//字符搜索：indexOf[str,fromIndex]。
+Str1="0123456789";//创建一个string 对象Str1
+Str2="2345";//创建一个string 对象Str2
+var aChunk = Str1.substring(4, 7); //将aChunk 设为"456"。
+document.write("aChunk="+aChunk);
+found= Str1.indexOf(Str2);//返回Str2在Str1中的起始位置，found值为。
+
+//创建字符串对象的另外一种方法是用new
+var mystr= new  String("<br>重庆大学<br>");
+document.write(mystr.link("http://www.cqu.edu.cn"));
+ </script>

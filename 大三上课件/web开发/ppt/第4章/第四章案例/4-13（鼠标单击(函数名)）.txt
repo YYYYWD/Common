@@ -1,0 +1,12 @@
+<html>
+<head><title>检查输入的字符串是否全由数字组成</title></head>
+<script language="javascript">
+  function checkNum(str)
+  { var TestResult = !/\D/.test(str); //使用正则表达式测试字符串是否全由数字组成
+alert(TestResult);
+  }
+</script>
+<body>
+<input id="mytext" type="text" value='12332'>
+<input id="mybut" type="button" value="检查"  onclick="checkNum(mytext.value)">
+</body></html>

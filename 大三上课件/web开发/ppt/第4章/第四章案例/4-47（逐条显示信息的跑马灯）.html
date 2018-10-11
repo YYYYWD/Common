@@ -1,0 +1,28 @@
+<html>
+<head></head>
+<script language="javascript">
+<!--
+  function makearray(size){
+   this.length=size;
+   for(i=1;i<=size;i++){this[i]=0}
+   return this;
+  }
+ msg=new makearray(2);
+  msg[1]="嗨！您好。";
+  msg[2]="可根据需要显示不同内容！";
+  interval = 100;
+  seq = 0;
+  i=1;
+function Scroll(){
+    document.myForm.myText.value = msg[i].substring(0, seq+1);
+    seq++;
+  if ( seq >= msg[i].length ) { seq = 0 ;i++;interval=900};
+    if(i>2){i=1};
+    window.setTimeout("Scroll();", interval );
+interval=100;
+}
+-->
+</script>
+<body OnLoad="Scroll()">
+<form name="myForm">
+<input type="text" name="myText" size="50">

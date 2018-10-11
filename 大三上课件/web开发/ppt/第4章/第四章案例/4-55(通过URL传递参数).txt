@@ -1,0 +1,11 @@
+start.htm文件内容如下：
+<html><head>
+<title>通过URL传递参数</title>
+</head>
+<body>
+<script type="text/javascript">
+window.open("index.htm?email=pp@cqu.edu.cn&name=wcl","_self");
+</script>
+</body>
+</html>
+

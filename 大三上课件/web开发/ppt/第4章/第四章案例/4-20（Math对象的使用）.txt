@@ -1,0 +1,15 @@
+<script language="javascript">
+var radius = 5;  // 声明一个半径变量并赋数值。
+var circleArea = Math.PI * radius * radius;  // 注意Math和PI大写。
+// 本公式计算给定半径的球体的体积。
+volume = (4/3)*(Math.PI*Math.pow(radius,3));
+alert(volume);  //输出.5987
+
+//也可用With保留字来简化程序的写法
+with (Math){
+var circleArea = PI * radius * radius;  // 注意Math和PI大写。
+// 本公式计算给定半径的球体的体积。
+volume = (4/3)*(PI* pow(radius,3));
+}
+alert(volume);  //输出.5987
+</script>

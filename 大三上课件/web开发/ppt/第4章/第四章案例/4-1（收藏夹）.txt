@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>HTML中如何使用script语言--设置收藏夹实例</title>
+</head>
+
+
+<script language="javascript">
+<!--
+alert('Hello'); //显示消息对话框
+ function Add_Favorite(url,title)  
+{
+     window.external.AddFavorite(url,title); //放到收藏夹
+ }
+   //-->
+</script>  
+
+
+
+<body>
+<A HREF="javascript:Add_Favorite('http://cqu.edu.cn','重庆大学');">收藏本站</A>
+</body>
+</html>
