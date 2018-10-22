@@ -1,0 +1,33 @@
+<script language="javascript">
+//定义pasta对象
+function pasta(grain, width, shape, hasEgg) {
+   this.grain = grain;                     
+   this.width = width;                    
+   this.shape = shape;                    
+   this.hasEgg = hasEgg;                
+   this.toString = pastaToString;
+}
+function pastaToString(){                
+    return "Grain: " + this.grain + "\n" +"Width: " + this.width + "\n" +
+        "Shape: " + this.shape + "\n" +"Egg?: " + Boolean(this.hasEgg);
+}
+//用new建立pasta对象的实例spaghetti 
+var spaghetti = new pasta("wheat", 0.2, "circle", true);
+
+//可以给对象实例spaghetti添加属性,以改变该实例
+spaghetti.color = "pale straw";
+spaghetti.drycook = 7;
+spaghetti.freshcook = 0.5;
+
+alert(spaghetti); //输出：Grain: wheat Width: 0.2 Shape: circle Egg?: true
+alert(spaghetti.freshcook) //输出：.5
+
+//用new建立pasta对象的实例chowFun
+var chowFun = new pasta("rice", 3, "flat", false); 
+
+//chowFun实例中并不包括实例spaghetti添加的color属性。可以为pasta对象添加一个color属性，以后所有pasta的对象实例均可使用此属性。
+pasta.prototype.color = "yellow"; 
+
+alert(spaghetti.color); //输出：pale straw
+alert(chowFun.color);  //输出：yellow （chowFun已经具有color属性了）
+</script>

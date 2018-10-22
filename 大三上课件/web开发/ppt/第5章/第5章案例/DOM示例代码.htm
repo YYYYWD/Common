@@ -1,0 +1,122 @@
+<html><head>
+<script type="text/javascript" src="loadxmldoc.js"></script>
+</head><body>
+<script type="text/javascript">
+//确认最后一个子节点为元素节点
+function get_lastchild(n){
+var x=n.lastChild;
+  while (x.nodeType!=1){
+    x=x.previousSibling;  }
+return x;
+}
+
+ xmlDoc=loadXMLDoc("books.xml");       //装入books.xml文档内容到内存
+ var root=xmlDoc.documentElement;          //选择XM文档根节点
+
+ document.write("<h2>根节点：" + root.nodeName+"</h2>");
+
+//1.返回第二个book元素节点中的price的文本值  
+var bookNode = root.childNodes[1];  //得到根节点下的第二个book元素节点
+var priceNode = bookNode.childNodes[3]; //得到book节点下的price子节点,处于第4个位置。从0开始计数。
+var textNode = priceNode.childNodes[0]; //得到price元素的文本节点
+var textValue = textNode.nodeValue;     //得到price元素的文本节点值
+document.write(textValue+"<br/>") ;     //输出文本节点值
+
+//2.如何遍历XML文档 
+var x=xmlDoc.getElementsByTagName('book'); //返回所有book元素的节点集合
+for(i=0;i<x.length;i++)  { //对每一个book元素循环
+   var bookChildNodeList = x[i].childNodes;
+            document.write("第"+i+"个book节点下包含的元素：");
+         for(j=0;j<bookChildNodeList.length;j++) {  //对book节点下的各个子元素循环
+             var elNode = bookChildNodeList.item(j);
+           var textNode = elNode.childNodes[0]; //得到title元素的文本节点
+           var textValue = textNode.nodeValue;     //得到title元素的文本节点值
+           document.write(elNode.nodeName +":"+textValue+" ; " );
+         }
+         document.write("<br/>");
+}
+    
+//3.获取XML文档中的所有书名
+var x=xmlDoc.getElementsByTagName('title'); //得到所有title元素对象
+for (i=0;i<x.length;i++)  {
+  document.write(x[i].childNodes[0].nodeValue +"<br/>")  //对每个title输出内容
+  }
+  
+//4.获取book节点的属性category的值的第一种方法
+var x=xmlDoc.getElementsByTagName('book');
+for (i=0;i<x.length;i++)  {
+  document.write(x[i].getAttribute('category')+"<br/>"); }
+
+//5.获取book节点的属性category的值的第二种方法
+var x=xmlDoc.getElementsByTagName('book');
+for(i=0;i<x.length;i++)  {
+  var att=x.item(i).attributes.getNamedItem("category");
+  document.write(att.value + "<br />")
+  }
+
+//6.为book节点设置一个新的属性edition和属性值
+var x=xmlDoc.getElementsByTagName('book');
+for(i=0;i<x.length;i++)  {
+  x.item(i).setAttribute("edition","FIRST");
+  }
+var x=xmlDoc.getElementsByTagName("title");
+for (i=0;i<x.length;i++)  {
+  document.write(x[i].childNodes[0].nodeValue); //输出book中所有title和edition值
+  document.write(" - Edition:"+x[i].parentNode.getAttribute('edition')+"<br />");
+  }
+  
+//7.修改book节点中category属性的值，即设置成新值,然后删除属性值
+var x=xmlDoc.getElementsByTagName('book');
+for(i=0;i<x.length;i++)  {
+  x.item(i).setAttribute("category","BESTSELLER");
+  }
+for (i=0;i<x.length;i++)  {
+  document.write(x[i].getAttribute('category')+"<br/>"); //输出所有属性值
+  }
+for(i=0;i<x.length;i++)  {
+  y = x.item(i);
+  y.removeAttribute('category');
+  }
+for (i=0;i<x.length;i++)  {
+  document.write(x[i].getAttribute('category')+"<br/>"); //输出所有category属性值为null
+  }
+  
+//8.删除未尾的<book>元素
+document.write("book 节点的数量为:"+ xmlDoc.getElementsByTagName('book').length +"<br />");
+var lastNode=get_lastchild(root);
+var delNode=root.removeChild(lastNode);
+document.write("执行removeChild后的 book 节点数量:");
+document.write(xmlDoc.getElementsByTagName('book').length);
+
+//9.编辑文本节点内容
+var x=xmlDoc.getElementsByTagName("title")[0].childNodes[0]; //得到title元素的文本节点
+document.write("<br/>"+ x.nodeValue);
+x.deleteData(0,9);  //从文本节点中删除从0开始的9个字符   Everyday Italian ==〉Italian
+x.insertData(0,"Easy ");  //在文本节点中0位置开始添加字符 Italian ==〉Easy Italian
+x.replaceData(0,8,"Lovable Easy");//替换文本内容中从0开始的8个字符为Lovable Easy
+document.write(" ==> "+x.nodeValue +"<br/>");  // ==〉Lovable Easy Italian
+
+//10.在节点列表的末端添加一个节点(生成book的一个子节点)
+var x=xmlDoc.getElementsByTagName('book');
+var newel,newtext
+for (i=0;i<x.length;i++)  {
+  newel=xmlDoc.createElement('edition');
+  newtext=xmlDoc.createTextNode('First');
+  newel.appendChild(newtext);
+  x[i].appendChild(newel);
+  }
+ document.write(root.xml+"<br/>");
+
+//11.在指定的现存节点前添加一个新的子元素。增加一个book节点
+var newNode=xmlDoc.createElement("book");  //新建元素节点book
+var newTitle=xmlDoc.createElement("title"); //新建元素节点title
+var newText=xmlDoc.createTextNode("A Notebook"); //新建文本节点
+newTitle.appendChild(newText); //形成title元素的文本节点
+newNode.appendChild(newTitle); //形成book节点的子节点
+root.insertBefore(newNode,get_lastchild(root)); //放到DOM树末节点之前
+document.write(root.xml+"<br/>");
+
+//12.替换节点列表中的一个节点
+root.replaceChild(newNode,get_lastchild(root));
+</script>
+</body></html>

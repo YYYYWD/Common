@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>重庆的天气预报</title>
+<style>
+   body{ text-align:center; margin:0 auto;}
+   #songContainer{ width:500px; height:600px; border:solid 1px #c1c1c1; margin:auto;}
+   #shuoming{ border-bottom:solid 1px #c1c1c1; height:35px; width:500px; color:#FF0000; font-size:16px; padding-top:14px; float:left; display:inline;}
+   #wendu{ border-bottom:solid 1px #c1c1c1; height:40px; width:500px; color:#FF0000; font-size:16px; float:left; display:inline;}
+   .shuoming{ background:#FFFF99; width:100px; height:30px; border-right:1px solid #c1c1c1; padding-top:10px; color:#990000; font-size:16px; float:left; display:inline;}
+   #wendu_neirong{ background:#FFFF99; width:399px; height:30px; padding-top:10px; color:#990000; font-size:16px; float:right; display:inline;}
+   #tianqi{ float:left; display:inline;border-bottom:1px solid #c1c1c1;}
+   #tianqi_neirong{ float:left; display:inline; background:#FFFF99; width:399px; height:30px; padding-top:10px; color:#990000; font-size:16px;}
+   #tianqi_img1{ padding-left:15px;}
+</style>
+</head>
+<script language="javascript">
+   
+   var xmlhttp=null;
+   window.onload = getChongqing;
+   function getChongqing(){
+      //判断浏览器类型，为了兼容！
+	  
+	  
+	  
+      if (window.XMLHttpRequest)
+	  {
+	    //alert(window.XMLHttpRequest);
+		xmlhttp=new XMLHttpRequest();
+	  }
+	  else if (window.ActiveXObject)
+	  {		
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");	
+		//alert(window.ActiveXObject);
+	  }
+	  else
+	  {
+		xmlhttp=new ActiveXObject("Msxml2.XMLHTTP");
+	  }
+	  //这里57516是重庆的ID，让然，可以用"http://www.webxml.com.cn/WebServices/WeatherWebService.asmx/getWeatherbyCityName?theCityName"+id  来动态给id赋值，来转换城市。
+	  xmlhttp.open("GET","http://www.webxml.com.cn/WebServices/WeatherWebService.asmx/getWeatherbyCityName?theCityName=57516",true);
+      xmlhttp.onreadystatechange=stateChange; //当XMLHttpRequest对象xmlhttp的状态变换时，就执行stateChange函数。
+      xmlhttp.send(null);
+	  //alert("ceshi");
+   }
+   
+   
+   
+     function stateChange()
+     {  
+       if(xmlhttp.readyState==4)  //这里和我们上课时说的一样，判断状态
+       {
+       	  if(xmlhttp.status==200 || xmlhttp.status==0)//如果是404，说明未找到服务文件。0是专门为火狐和谷歌浏览器保留的，它说明本地运行成功的情况。
+       	  {
+			  //获取所有返回的数据
+	          var data=xmlhttp.responseXML;	
+			  
+	          //alert(xmlhttp.status);
+	          //alert(document.getElementById("no1").firstChild.nodeValue);
+			  //alert(data.getElementsByTagName("string")[5].firstChild.nodeValue);
+	          document.getElementById("no1").firstChild.nodeValue = data.getElementsByTagName("string")[5].firstChild.nodeValue;
+	          document.getElementById("no2").firstChild.nodeValue = data.getElementsByTagName("string")[6].firstChild.nodeValue;
+	          document.getElementById("tianqi_img1").src = "weather" + "/" + data.getElementsByTagName("string")[8].firstChild.nodeValue;
+			  document.getElementById("tianqi_img2").src = "weather" + "/" + data.getElementsByTagName("string")[9].firstChild.nodeValue;
+          }
+       }
+
+     }
+    //window.onload = getChongqing();
+</script>
+
+<body>
+     <div id="songContainer">
+	     <div id="shuoming">
+		      王老师您好，我用JavaScript实现的天气预报，请指正！
+		 </div>
+		 <div id="wendu">
+		      <div class="shuoming">
+			       温&nbsp;&nbsp;度
+			  </div>
+			  <div id="wendu_neirong">
+			       <span id="no1">&nbsp;</span>
+			  </div>
+		 </div>
+		 <div id="tianqi">
+		      <div class="shuoming">
+			       天&nbsp;&nbsp;气
+			  </div>
+			  <div id="tianqi_neirong">
+			       <span id="no2" style="margin:0; padding:0;">&nbsp;</span><img id="tianqi_img1"  /><img id="tianqi_img2"  />
+			  </div>
+		 </div>
+	 </div>
+</body>
+</html>

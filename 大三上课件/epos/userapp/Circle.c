@@ -13,7 +13,7 @@ extern int cir_xx0,cir_yy0,cir_r,my_control;
 
 void input_circle()
 {
- int i;
+    int i;
     int count[3]={0};
     for(i=0;i<3;i++)
     {

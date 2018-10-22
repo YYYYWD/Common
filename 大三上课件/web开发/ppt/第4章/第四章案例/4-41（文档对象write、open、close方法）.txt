@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<TITLE>First Document</TITLE>
+<script type="text/javascript">
+function replace()
+{
+    var oNewDoc = document.open("text/html", "replace");
+    var sMarkup = "<HTML><HEAD><TITLE>New Document</TITLE><BODY>Hello, world</BODY></HTML>";
+    oNewDoc.write(sMarkup);
+    oNewDoc.close();
+}
+function openwin() 
+{
+document.open('http://www.qq.com','_blank','scrollbars=no,width=480,height=420,left=75,top=20,status=no,resizable=yes');  //新打开一个窗口 
+}
+</script>
+</HEAD>
+<BODY bgcolor=#FFFFCC>
+<h4>I just want to say</h4><br>
+<!--Button will call the replace function and replace the current page with a new one-->
+<Input type ="button" value = "Finish Sentence" onclick="replace();">
+<script type="text/javascript">
+//在当前页面显示一个图片和一个cancel按钮
+document.writeln("<p></p><hr><img src='web.gif'>");
+document.writeln("<Input type ='button' value ='cancel'>");
+</script> 
+
+<Input type ="button" value ="打开新窗口" onclick="openwin();">
+</BODY>
+</html>

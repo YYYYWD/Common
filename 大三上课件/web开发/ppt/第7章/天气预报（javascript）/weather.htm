@@ -1,0 +1,71 @@
+该网站提供了免费的、国内400个城市的有关天气预报的WEB服务，其接入口为http://webservice.webxml.com.cn/WebServices/WeatherWebService.asmx，点击该链接可查看该天气预报Web服务所提供的接口调用介绍，如图1-1所示。本例将通过该Web 服务提供的
+getWeatherbyCityName来获取某城市的天气情况。
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>重庆的天气预报</title>
+
+</head>
+<script language="javascript"> 
+   
+   var xmlhttp=null;
+   window.onload = getCityWeather;  //浏览器加载网页完毕后执行onload事件，调用getCityWeather函数
+
+   function getCityWeather(){
+      //判断浏览器类型，为了兼容！
+	  
+	    
+      if (window.XMLHttpRequest)  //针对不同的浏览器和不同的浏览器版本创建ajax对象
+	  {
+	    xmlhttp=new XMLHttpRequest();
+	  }
+	  else if (window.ActiveXObject)
+	  {		
+	    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");	
+			  }
+	  else
+	  {
+	    xmlhttp=new ActiveXObject("Msxml2.XMLHTTP");
+	  }
+	  //这里57516是重庆的ID，让然，可以用"http://www.webxml.com.cn/WebServices/WeatherWebService.asmx/getWeatherbyCityName?theCityName"+id  来动态给id赋值，来转换城市。
+	 
+      //通过xmlhttp的open方法连接该Web服务
+      xmlhttp.open("GET","http://www.webxml.com.cn/WebServices/WeatherWebService.asmx/getWeatherbyCityName?theCityName=57516",true);
+      xmlhttp.send(null);  //向Web服务发出处理请求   
+      xmlhttp.onreadystatechange=stateChange; //onreadystatechange是xmlhttp对象的一个事件。当XMLHttpRequest对象xmlhttp的状态变换时，就执行stateChange函数。
+  
+   }
+   
+   
+   
+     function stateChange()
+     {  
+       if(xmlhttp.readyState==4)  //判断Ajax对象返回状态
+       {
+       	  if(xmlhttp.status==200 || xmlhttp.status==0)//如果是404，说明未找到服务文件。0是专门为火狐和谷歌浏览器保留的，它说明本地运行成功的情况。
+       	  {
+			  
+	          var data=xmlhttp.responseXML;	 //获取所有返回的数据
+			  
+			  
+	          document.getElementById("no1").innerHTML = data.getElementsByTagName("string")[5].firstChild.nodeValue;
+	          document.getElementById("no2").innerHTML = data.getElementsByTagName("string")[6].firstChild.nodeValue;
+	         
+          }
+       }
+ 
+     }
+    
+</script>
+ 
+<body>
+  
+当前的温度：<span id="no1"></span>
+当前的天气：<span id="no2" ></span>
+		     
+</body>
+</html>
+

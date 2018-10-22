@@ -1,0 +1,12 @@
+<html>
+<head><title>检查输入的字符串是否全由数字组成</title></head>
+<body>
+<input id="mytext" type="text" value='12332'>
+<input id="mybut" type="button" value="检查">
+<script language="javascript">
+mybut.onmousedown=function() { /* mybut 为按钮的ID */
+  var TestResult = !/\D/.test(mytext.value); /*使用正则表达式测试字符串是否全是数字*/  
+   alert(TestResult);
+}
+</script>
+</body></html>

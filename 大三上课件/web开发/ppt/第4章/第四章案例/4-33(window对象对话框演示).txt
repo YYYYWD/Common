@@ -1,0 +1,6 @@
+<script language="JavaScript">
+var test=window.prompt("请输入数据:");
+var YorN=confirm("你输入的数据是"+test+"，确定吗？");
+if (YorN) alert("输入正确!");
+else  alert("输入不正确!");
+</script>

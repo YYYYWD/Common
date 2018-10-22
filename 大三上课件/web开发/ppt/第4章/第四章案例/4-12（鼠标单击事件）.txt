@@ -1,0 +1,5 @@
+<html><body>
+<form>
+<Input type="button" Value="鼠标响应" onclick="alert('这是一个例子')">
+</form>
+</body></html>

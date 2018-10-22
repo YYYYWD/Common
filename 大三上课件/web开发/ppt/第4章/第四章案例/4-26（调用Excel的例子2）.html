@@ -1,0 +1,19 @@
+<script language="javascript">
+//启动EXCEL
+var ExcelApp = new ActiveXObject("Excel.Application"); 
+ExcelApp.Visible = true;   //使EXCEL窗口可见
+ExcelApp.WorkBooks.Open("c:\\TEST.xls");
+var objExcelBook=ExcelApp.ActiveWorkBook;
+var objExcelSheets=objExcelBook.Worksheets;
+var objExcelSheet=objExcelBook.Sheets(1); //指定当前工作区为Sheet2
+//此处为对excel单元格进行填写数据的语句
+objExcelSheet.Range("B2:k2").Value=Array("Week1","Week2","Week3","Week4","Week5","Week6","Week7");
+objExcelSheet.Range("B3:k3").Value=Array("67","87","5","9","7","45","45","54","54","10");
+objExcelSheet.Range("B4:k4").Value=Array("10","10","8","27","33","37","50","54","10","10");
+objExcelSheet.Range("B5:k5").Value=Array("23","3","86","64","60","18","5","1","36","80");
+objExcelSheet.Cells(3,1).Value="InternetExplorer";
+objExcelSheet.Cells(4,1).Value="Netscape";
+objExcelSheet.Cells(5,1).Value="Other";
+objExcelSheet.SaveAs("C:\\TEST2.XLS");  //保存到C:\TEST2.XLS
+ExcelApp.Quit(); //退出EXCEL
+</script>

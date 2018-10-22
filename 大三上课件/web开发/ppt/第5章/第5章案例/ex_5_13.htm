@@ -1,0 +1,39 @@
+<html><head><title>XML数据岛在HTML中的应用</title> </head>
+<body style="background-color:#fffff0">
+<xml id="xmldata">
+<studentList>
+  <stu>
+    <sid>200202051001</sid>
+    <name>黎  佳</name>
+    <gender>男</gender>
+    <cName>02级财务(1)班</cName>
+  </stu>
+  <stu>
+    <sid>200202051002</sid>
+    <name>樊  娟</name>
+    <gender>女</gender>
+    <cName>02级财务(1)班</cName>
+  </stu>
+  <stu>
+    <sid>200202051003</sid>
+    <name>韦  威</name>
+    <gender>男</gender>
+    <cName>02级财务(1)班</cName>
+  </stu>
+</studentList>
+
+</xml>
+
+<input type="text" datasrc="#xmldata" DataFLD="sid">
+
+   <h2>财务管理专业学生名单</h2>
+   <table datasrc="#xmldata" style="border-style:inset;border-color:Red" border="1">
+      <thead> <th>学号</th> <th>姓名</th><th>性别</th> <th>班级</th> </thead>
+       <tr>
+          <td><span DataFLD="sid"></span></td>
+          <td><span DataFLD="name"></span></td>
+          <td><span DataFLD="gender"></span></td>
+          <td><span DataFLD="cName"></span></td>
+       </tr>
+   </table>   
+</body></html>

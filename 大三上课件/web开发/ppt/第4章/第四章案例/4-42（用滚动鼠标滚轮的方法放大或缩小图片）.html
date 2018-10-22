@@ -1,0 +1,23 @@
+<html><head><title>将页面源代码调入编辑框</title></head>
+<body>
+<SCRIPT type="text/javascript">
+function fnGetHTML(){
+   var sData = document.documentElement.innerHTML;
+   oResults.value=sData;
+}
+function zoomimg(o){ //用滚动鼠标滚轮的方法放大或缩小图片
+	 var zoom=parseInt(o.style.zoom, 10)||100;
+zoom+=event.wheelDelta/12;   //滚轮滚过的距离
+      if (zoom>0) o.style.zoom=zoom+'%'; //设置缩放比例
+	 return false;
+}
+</SCRIPT>
+<A  href="javascript:fnGetHTML()">将页面源代码调入编辑框</A> 
+<TEXTAREA ID = oResults COLS = 50 ROWS = 10></TEXTAREA>
+
+<a href="web.gif" onmousewheel="return zoomimg(this)" target="_blank">
+<img src="web.gif" border=1 title="点击可看原图"
+onload="javascript:if(this.width>740)this.width=740;"
+    onmouseover="javascript:if(this.width>740)this.width=740;"></a>
+</body>
+</html>

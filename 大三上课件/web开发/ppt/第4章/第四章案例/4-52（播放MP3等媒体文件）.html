@@ -1,0 +1,33 @@
+<html>
+<script language="JScript">
+function CreateControl(DivID, CLSID, ObjectID,WIDTH, HEIGHT, URL, AUTOSTART){
+  var d = document.getElementById(DivID);
+d.innerHTML='<object classid='+CLSID+' id='+ObjectID+' width='+WIDTH+' height='+HEIGHT+'>
+  <param name="URL" value=' + URL + '>  <param name="autoStart" value=' + AUTOSTART + '/>';
+}
+</script>
+ <head></head>
+ <body>
+   <div id="EXAMPLE_DIV_ID">  This text will be replaced by the control </div>
+   <script language="JScript">
+CreateControl("EXAMPLE_DIV_ID","clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6",
+            "EXAMPLE_OBJECT_ID", "300", "200", "file:///C:/TDdownload/爱我还是他.wma","-1") ;
+   </script>
+ </body>
+</html>
+
+<!--  以下是另外一种播放方法-->
+<html>
+  <body>
+    <div id="DivID">
+ <script language="javascript">
+        var myObject = document.createElement('object');
+DivID.appendChild(myObject);
+myObject.width = "600";
+myObject.height = "400";
+myObject.classid= "clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6";
+myObject.URL = "file:///C:/TDdownload/红旗飘飘.wma";
+myObject.uiMode = "none" ;
+</script>
+</body>
+</html>

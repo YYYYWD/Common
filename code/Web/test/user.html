@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user</title>
+</head>
+<body>
+    <table border="1" bgcolor="red">
+        <tr>
+            <td>操作qwe</td>
+            <td>编号</td>
+            <td>姓名</td>
+        </tr>
+        <tr>
+            <td><input value="选择" type="button" onclick="s1('100','asd')"></td>
+            <td id="1">100</td>
+            <td id="a">傻逼儿子</td>
+        </tr>
+        <tr>
+            <td><input value="选择" type="button" onclick="s1(document.getElementById('2').value,document.getElementById('b').value)"></td>
+            <td id="2">101</td>
+            <td id="b">124sdf</td>
+        </tr>
+        <tr>
+            <td><input value="选择" type="button" onclick="s1(document.getElementById('3').value,document.getElementById('c').value)"></td>
+            <td id="3">102</td>
+            <td id="c">sdfsd</td>
+        </tr>
+    </table>
+<script>
+    function s1(num,name) {
+        var pwin=window.opener;
+        pwin.document.getElementById("numid").value=num;
+        pwin.document.getElementById("nameid").value=name;
+        window.close();
+    }
+</script>
+</body>
+</html>

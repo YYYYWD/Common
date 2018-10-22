@@ -1,0 +1,32 @@
+<html><head><title>无标题页</title></head>
+<SCRIPT language="JavaScript" >
+function fnRandom(iModifier){
+   return parseInt(Math.random()*iModifier); //形成随机数
+}
+function fnSetValues(){
+   var iHeight=oForm.oHeight.options[
+      oForm.oHeight.selectedIndex].text;
+   if(iHeight.indexOf("Random")>-1){
+      iHeight=fnRandom(document.body.clientHeight); //随机数小于浏览器页面显示区域的高度
+   }
+   var sFeatures="dialogHeight: " + iHeight + "px;";
+   return sFeatures;
+}
+function fnOpen(){
+   var sFeatures="dialogWidth:200px;"+fnSetValues();
+   showModalDialog("showModalDialog_target.htm", "", sFeatures)
+}
+</SCRIPT>
+<body onmouseover="self.status='我是浏览器窗口状态栏,欢迎您!'"
+ onload="alert('开始加载页面!') ">
+<FORM NAME=oForm>
+对话框高度<SELECT NAME="oHeight">
+   <OPTION>-- Random --
+   <OPTION>120
+   <OPTION>200
+   <OPTION>250
+   <OPTION>300
+</SELECT><br>建立模态对话框
+<INPUT TYPE="button" VALUE="Push To Create" onclick="fnOpen()">
+</FORM>
+</body> </html>

@@ -1,0 +1,18 @@
+<script type="text/javascript" >
+var fso = new ActiveXObject("Scripting.FileSystemObject") 
+fso.CreateFolder ("C:\\Bonus");//在C盘创建一个文件夹
+fso.DeleteFolder ("C:\\Bonus");// 删除创建的文件夹
+fso.CopyFile("c:\\temp\\11.bmp","c:\\Bonus\\22.bmp");//复制文件
+// 创建新文件
+var tf = fso.CreateTextFile("c:\\testfile.txt", true); 
+tf.WriteLine("Testing 1, 2, 3.") ;  // 填写数据，并增加换行符
+tf.WriteBlankLines(3) ;  // 增加个空行
+tf.Write ("This is a test."); // 填写一行，不带换行符
+tf.Close(); // 关闭文件
+// 打开文件
+var ForReading=1;
+var ts = fso.OpenTextFile("c:\\testfile.txt", ForReading); 
+s = ts.ReadLine(); // 读取文件一行内容到字符串
+alert("File contents = '" + s + "'"); // 显示字符串信息
+ts.Close(); // 关闭文件
+</script>

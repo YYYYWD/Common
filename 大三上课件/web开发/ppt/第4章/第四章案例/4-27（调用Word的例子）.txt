@@ -1,0 +1,16 @@
+<script language="javascript">
+WordApp = new ActiveXObject("Word.Application"); //启动Word
+  WordApp.Application.Visible = true;  //使Word窗口可见
+  var mydoc=WordApp.Documents.Add("",0,1); //新建一个文档
+WordApp.ActiveWindow.ActivePane.View.Type=3; //Word视图模式为页面
+
+WordApp.Selection.TypeText("测试案例");  //输入字符串
+  WordApp.Selection.HomeKey (5,1); //光标移到行首
+WordApp.Selection.Font.Bold = 9999998 ; //wdToggle
+WordApp.Selection.WholeStory(); //选中整个文档内容
+  mydoc.SaveAs("c:\\test.doc"); //存盘到c:\test.doc
+for(i=WordApp.Documents.Count;i>0;i--){ //关闭所有打开的WORD文档
+ 	WordApp.Documents(i).Close(0);
+ }
+ WordApp.Application.quit();  //退出Word
+</script>

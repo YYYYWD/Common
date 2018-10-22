@@ -1,0 +1,22 @@
+<script language="javascript">
+var count = 10;
+function resizeimg(oImage) { 
+count = Counting(count);
+Resize(oImage,count);
+return false;
+}
+function Counting(newzoom){ 
+if (event.wheelDelta >= 120) 
+newzoom++; //鼠标滚轮滚动一次为个单位距离，滚动距离是的倍数
+else if (event.wheelDelta <= -120)  
+newzoom--;
+if (newzoom<2) newzoom=2; //只允许缩小到%
+if (newzoom>50) newzoom=50; //只允许放大到%
+return newzoom; 
+}
+function Resize(oImage,newzoom){ 
+oImage.style.zoom = newzoom + '0%'; //设置图片的缩放属性
+count=newzoom;
+}
+</script>
+<img onDblClick='return Resize(this,10);return false;'  onmousewheel='return resizeimg(this)' border="0" src="web.gif" width="500" height="369">

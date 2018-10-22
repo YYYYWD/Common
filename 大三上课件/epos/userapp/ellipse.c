@@ -146,9 +146,13 @@ void input_ellipse()
 
 void ellipse_test1()
 {
-    COLORREF cr1=RGB(255,255,255);
+    COLORREF cr1=RGB(ellipse_a%255,ellipse_b%255,(ellipse_b+ellipse_a)%255);
     COLORREF cr2=RGB(0,0,0);
-    input_ellipse();
+    if(my_control==2)
+    {
+        input_ellipse();
+        cr1=RGB(ellipse_a%255,ellipse_b%255,(ellipse_b+ellipse_a)%255);
+    }
     Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr1);
  while(1)
     {
@@ -157,62 +161,62 @@ void ellipse_test1()
         if(key==0x0F09)
         {
             my_control++;
-            Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr1);
+            Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr2);
             break;
         }
         else if(key==0x2E63)//(C)
         {
               Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr2);
               input_ellipse();
-              Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr1);
+              Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,RGB(ellipse_a%255,ellipse_b%255,(ellipse_b+ellipse_a)%255));
         }
         else if(key==0x4800)//上
         {
              Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr2);
              ellipse_yy0-=5;
-             Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr1);
+             Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,RGB(ellipse_a%255,ellipse_b%255,(ellipse_b+ellipse_a)%255));
         }
         else if(key==0x5000)//下
         {
              Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr2);
             ellipse_yy0+=5;
-             Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr1);
+             Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,RGB(ellipse_a%255,ellipse_b%255,(ellipse_b+ellipse_a)%255));
         }
         else if(key==0x4B00)//左
         {
              Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr2);
             ellipse_xx0-=5;
-             Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr1);
+             Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,RGB(ellipse_a%255,ellipse_b%255,(ellipse_b+ellipse_a)%255));
         }
          else if(key==0x4D00)//右
         {
              Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr2);
             ellipse_xx0+=5;
-            Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr1);
+            Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,RGB(ellipse_a%255,ellipse_b%255,(ellipse_b+ellipse_a)%255));
         }
         else if(key==0x1177)//a+
         {
              Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr2);
             ellipse_a+=5;
-             Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr1);
+             Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,RGB(ellipse_a%255,ellipse_b%255,(ellipse_b+ellipse_a)%255));
         }
         else if(key==0x1F73)//a-
         {
              Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr2);
             ellipse_a-=5;
-             Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr1);
+             Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,RGB(ellipse_a%255,ellipse_b%255,(ellipse_b+ellipse_a)%255));
         }
         else if(key==0x1E61)//b-
         {
              Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr2);
             ellipse_b-=5;
-              Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr1);
+              Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,RGB(ellipse_a%255,ellipse_b%255,(ellipse_b+ellipse_a)%255));
         }
          else if(key==0x2064)//b+
         {
                Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr2);
                ellipse_b+=5;
-               Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,cr1);
+               Mid_ellipse(ellipse_xx0,ellipse_yy0,ellipse_a,ellipse_b,RGB(ellipse_a%255,ellipse_b%255,(ellipse_b+ellipse_a)%255));
         }
         else if(key==0x011B)
         {

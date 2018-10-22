@@ -1,0 +1,35 @@
+<script language="javascript">
+/*
+本示例使用前面定义的月份名称数组。
+第一条语句以“Day Month Date 00:00:00 Year”格式对Today 变量赋值。
+*/
+var Today = new Date();  //获取今天的日期。
+// 提取年，月，日。
+thisYear = Today.getFullYear(); thisMonth = Today.getMonth(); thisDay = Today.getDate();
+// 提取时，分，秒。
+thisHour=Today.getHours(); thisMinutes=Today.getMinutes();thisSeconds=Today.getSeconds();  
+
+//提取星期几
+thisWeek=Today.getDay();
+var x = new Array("日", "一", "二");
+    x = x.concat("三","四", "五", "六");
+thisWeek=x[thisWeek];
+
+nowDateTime="现在是"+thisYear+"年"+thisMonth +"月"+thisDay+"日";
+nowDateTime+=thisHour+"时"+thisMinutes+"分"+thisSeconds+"秒";
+nowDateTime+="星期"+thisWeek;
+
+document.write(nowDateTime+"<br>");  //输出：现在是年月日时分秒
+
+//计算两个日期相差的天数
+var datestring1 = "November 1, 1997 10:15 AM";
+var datestring2 = "December 1, 2007 10:15 AM";
+var DayMilliseconds= 24*60*60*1000; //1天的毫秒数
+var t1 = Date.parse(datestring1) ; //换算成自年月日到年月日的毫秒数
+var t2 = Date.parse(datestring2) ; //换算成自年月日到年月日的毫秒数
+   s = "There are " 
+   s += Math.round(Math.abs((t2-t1)/DayMilliseconds)) + " days "
+   s += "between " + datestring1 + " and " + datestring2 ;
+
+document.write(s); //输出：There are 3682 days between November 1, 1997 10:15 AM and December 1, 2007 10:15 AM
+</script>

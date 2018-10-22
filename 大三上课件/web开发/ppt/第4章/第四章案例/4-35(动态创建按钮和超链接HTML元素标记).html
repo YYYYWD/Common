@@ -1,0 +1,42 @@
+<html>
+<head><title>无标题页</title>
+</head>
+<body>
+<input type="button" value="click  me to add button" onclick="AddElement();" >
+<SPAN ID="mySpan"></SPAN>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<script language ="javascript">
+function AddElement() {
+     mySpan.innerHTML="";
+        // 添加一个按钮标记
+    var aElement=document.createElement("<input type='button'>");  //创建按钮元素
+    eval("aElement.value='请点击我'"); //指定按钮上的文字
+    mySpan.appendChild(aElement);   //将建立的按钮放到Span容器标记中呈现出来
+     aElement=document.createElement("A"); // 添加一个超链接标记
+     aElement.innerText='我是超链接'; //指定超链接中的文字
+     aElement.href="javascript:alert('A link.')"; //指定超链接的链接地址
+     mySpan.appendChild(aElement);   //将建立的超链接放到Span容器标记中呈现出来
+}
+
+//双击鼠标滚动屏幕的代码
+  var currentpos,timer;
+
+  function initialize(){
+    //每隔毫秒执行一次scrollwindow函数
+    timer=setInterval ("scrollwindow()",30);
+  }
+  function sc(){
+    clearInterval(timer); //定时器停止工作
+  }
+  function scrollwindow(){
+   currentpos=document.body.scrollTop; //获取顶端的y坐标值（像素）
+   window.scroll(0,++currentpos);     //沿y方向滚动一个像素单位
+   if (currentpos !=document.body.scrollTop) sc();
+  }
+  document.onmousedown=sc;//调用鼠标单击事件处理函数实现单击鼠标则停止屏幕滚动
+  document.ondblclick=initialize; //调用鼠标双击事件处理函数实现双击鼠标开始屏幕滚动
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>用HTML DOM放大图片</title>
+</head>
+<body>
+<BR>原图：<BR><img src=img1.JPG onmousemove="zoom()" id=srcImg height="800" width="200">
+<BR>局部放大图：<BR><div style="overflow:hidden"><img id=zoomImg></div>
+<script language="JavaScript">
+<!--
+zoomImg.src = srcImg.src;
+srcImg.height = srcImg.height/4;
+var zoomRate = 5;
+zoomImg.height = srcImg.height*zoomRate;
+zoomImg.parentNode.style.width = srcImg.width;
+zoomImg.parentNode.style.height = srcImg.height;
+function zoom(){
+var elm = event.srcElement;
+h = elm.offsetHeight/zoomRate/2;
+w = elm.offsetWidth/zoomRate/2;
+var x = event.x-elm.offsetLeft;
+x=x<(elm.offsetWidth-w)?x<w?w:x:elm.offsetWidth-w;
+zoomImg.style.marginLeft=(w-x)*zoomRate;
+var y = event.y-elm.offsetTop;
+y=y<(elm.offsetHeight-h)?y<h?h:y:elm.offsetHeight-h;
+zoomImg.style.marginTop=(h-y)*zoomRate;
+}
+//-->
+</script> 
+</body>
+</html>

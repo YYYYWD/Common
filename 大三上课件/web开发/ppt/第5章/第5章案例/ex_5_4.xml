@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<?xml-stylesheet type="text/css" href="ex_5_4.css"?>
+<roster xmlns:html="http://www.w3.org/1999/xhtml">
+  <html:style type="text/css">
+    html\:caption {font-weight:bold; text-decoration:underline} /*指定表格标题的样式*/
+    html\:table {background-image: url("images/bg.jpg")}  /* 指定表格的背景图片*/
+    .myclass {border-style:double;}
+    #myid {border-style:groove;}
+  </html:style>
+  <html:table border="1" cellPadding="2">
+    <html:caption> 学生花名册</html:caption>
+    <html:tr>
+      <student>
+        <html:td> <name>李华</name> </html:td>
+        <html:td> <origin id="myid">河北</origin> </html:td>
+        <html:td> <age>15</age> </html:td>
+        <html:td> <telephone>62875555</telephone> </html:td>
+      </student>
+    </html:tr>
+    <html:tr>
+      <student>
+        <html:td> <name>张三</name> </html:td>
+        <html:td> <origin class="myclass">北京</origin> </html:td>
+        <html:td> <age>14</age> </html:td>
+        <html:td> <telephone>82873425</telephone> </html:td>
+      </student>
+    </html:tr>
+  </html:table>
+</roster>
+

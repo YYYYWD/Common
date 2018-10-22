@@ -1,0 +1,6 @@
+<script language="javascript">
+var iNumber="100";
+var anExpression = "(16 * 9 % 7)";
+var total = eval(anExpression + "/" + iNumber); //等同于求(16 * 9 % 7)/100的值
+alert(total);// 将变量total 赋值为0.04。
+</script>

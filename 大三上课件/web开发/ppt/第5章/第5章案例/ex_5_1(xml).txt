@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<note>
+  <to>Brion</to>
+  <from>Jane</from>
+  <heading>Reminder</heading>
+  <body>Don’t forget me this weekend！</body>
+  <![CDATA[This is an example of CDATA]]>
+</note>

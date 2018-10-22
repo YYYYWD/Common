@@ -1,0 +1,24 @@
+<html>
+<head><title>无标题页</title>
+</head>
+<body>
+<form id="myForm" action="" method = "post" >
+<input id="myColor" type="text" value="red" >
+<input id="myTitle" type="text" value="新的窗口标题" >
+<input id="mybut1" type="button" value="改变页面背景颜色">
+<input id="mybut2" type="button" value="改变浏览器窗口标题">
+</form>
+<script language="javascript">
+     var  b1=document.getElementById("mybut1");
+     var b2=document.getElementById("mybut2");
+     var t1=document.getElementById("myColor");    
+     var t2=document.getElementById("myTitle");    
+     b1.onmousedown= function() {document.bgColor = t1.value ;}
+     b2.onmousedown= function() {document.title = t2.value;} 
+</script>
+
+
+
+</body>
+</html>
+

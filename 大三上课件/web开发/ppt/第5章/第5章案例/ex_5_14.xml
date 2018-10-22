@@ -1,0 +1,43 @@
+<HTML><HEAD><Title>HTML中的数据岛中的记录集</Title></HEAD>
+<body bgcolor="#00FFFF">
+<font color="#FF0000"><b>HTML中的XML数据岛记录编辑与添加</b></font>
+<HR>酒店名称：<input type="text" datasrc="#islet" DataFLD="NAME"><BR>
+　　地址：<input type="text" datasrc="#islet" DataFLD="Address"><BR>
+　　主页：<input type="text" datasrc="#islet" DataFLD="HomePage"><BR>
+电子邮件：<input type="text" datasrc="#islet" DataFLD="E-Mail"><BR>
+　　电话：<input type="text" datasrc="#islet" DataFLD="TelePhone"><BR>
+　　级别：<input type="text" datasrc="#islet" DataFLD="Grade"><HR>
+<input id="first" type="button" value="首条" onclick="islet.recordset.moveFirst()">
+<input id="prev" type="button" value="上条" onclick="islet.recordset.movePrevious()">  
+<input id="next" type="button" value="下条" onclick="islet.recordset.moveNext()">  
+<input id="last" type="button" value="末条" onclick="islet.recordset.moveLast()">  
+<input id="Add" type="button" value="添加" onclick="islet.recordset.addNew()">  
+<XML ID="islet">
+  <HotelList>
+    <Hotel>
+      <Name>四海大酒店</Name>
+      <Address>海魂路号</Address>
+      <HomePage>www.sihaohotel.com.cn</HomePage>
+      <E-Mail>master@sihaohotel.com.cn</E-Mail>
+      <TelePhone>(0989)8888888</TelePhone>
+      <Grade>五星级</Grade>
+    </Hotel>
+    <Hotel>
+      <Name>五湖宾馆</Name>
+      <Address>东平路号</Address>
+      <HomePage>www.wuhu.com.cn</HomePage>
+      <E-Mail>web@wuhu.com.cn</E-Mail>
+      <TelePhone>(0979)1111666</TelePhone>
+      <Grade>四星级</Grade>
+    </Hotel>
+    <Hotel>
+      <Name>“大沙漠”宾馆</Name>
+      <Address>留香路号</Address>
+      <HomePage>www.dashamohotel.com.cn</HomePage>
+      <E-Mail>master@dashamohotel.com.cn</E-Mail>
+      <TelePhone>(0989)87878788</TelePhone>
+      <Grade>五星级</Grade>
+    </Hotel>
+  </HotelList>
+</XML>
+</body></HTML>

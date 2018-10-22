@@ -1,0 +1,14 @@
+<script language="javascript">
+//定义pasta对象
+function pasta(grain, width, shape, hasEgg) {    
+  this.grain = grain;                        
+  this.width = width;                       
+  this.shape = shape;                       
+this.hasEgg = hasEgg;                    
+}
+//使用对象的时候，用new进行实例化，下面建立了两个对象实例。
+var spaghetti = new pasta("wheat", 0.2, "circle", true);
+var linguine = new pasta("wheat", 0.3, "oval", true);
+document.write(spaghetti.shape) //输出circle
+document.write(linguine.shape) //输出oval
+</script>

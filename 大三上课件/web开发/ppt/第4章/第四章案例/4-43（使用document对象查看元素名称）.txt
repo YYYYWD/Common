@@ -1,0 +1,11 @@
+<html><head>
+<script type="text/javascript">
+function getElement(){
+var x=document.getElementById("myHeader")
+alert("这是一个" + x.tagName + " 元素")
+}
+</script>
+</head><body>
+<h3 id="myHeader" onclick="getElement()">点击查看此元素名称</h3>
+</body>
+</html>

@@ -13,7 +13,7 @@ CFLAGS=	-m32 -Wall -DSNPRINTF_FLOATPOINT \
 LDFLAGS=-m32 -nostdlib -nostartfiles -nodefaultlibs \
 		-Wl,-Map,$(PROG).map
 
-COBJS=	vm86call.o graphics.o main.o Line.o Circle.o font_8x16.o ellipse.o
+COBJS=	vm86call.o graphics.o main.o Line.o Circle.o font_8x16.o ellipse.o My_Edge.o
 COBJS+=	lib/sysconf.o lib/math.o lib/stdio.o lib/stdlib.o \
 		lib/qsort.o
 COBJS+=	../lib/softfloat.o ../lib/string.o ../lib/memcpy.o \

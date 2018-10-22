@@ -14,8 +14,9 @@
 #include "Circle.h"
 #include "ellipse.h"
 #include "font_8x16.h"
-
+#include "My_Edge.h"
 #include <time.h>
+
 
 
 
@@ -23,8 +24,6 @@
 #define mode 1024*1024
 extern void *tlsf_create_with_pool(void* mem, size_t bytes);
 extern void *g_heap;
-
-
 
 
 
@@ -102,17 +101,23 @@ void control_Circle()
     while(1)
     {
         
-        if(my_control%2==0)
+        if(my_control%3==0)
         {
             char c[]="------- Mid Circle  -------";
             my_printf(c,strlen(c),RGB(255,0,0),0,0);
             Circle_test1();
         }
-        else 
+        else if(my_control%3==1)
         {
-            char c[]="----- Bresenham -----";
+            char c[]="----- Bresenham Circle-----";
             my_printf(c,strlen(c),RGB(0,255,0),0,0);
             Circle_test2();
+        }
+        else
+        {
+            char c[]="--------  Ellipse  --------";
+            my_printf(c,strlen(c),RGB(0,0,255),0,0);
+            ellipse_test1();
         }
         
     }
@@ -137,11 +142,11 @@ void main(void *pv)
     //printf("%d %d %d %d",xx0,yy0,xx1,yy1);
  
     //control_line();
-    //control_Circle();
+    control_Circle();
     //Bresenham_Circle(0,0,50,RGB(255,255,255));
     //Mid_ellipse(500,500,80,60,RGB(255,255,255));
     //lcd_put_ascii(50,50,c[0],RGB(255,255,255));
-    ellipse_test1();
+    //ellipse_test1();
     task_exit(0);
     
 }

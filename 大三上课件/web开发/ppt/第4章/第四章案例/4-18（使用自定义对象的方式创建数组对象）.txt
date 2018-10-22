@@ -1,0 +1,13 @@
+<script language="javascript">
+function arrayName(size){
+this.length=size;
+for(var i=0; i<=size;i++) this[i]=0;
+return this;
+}
+var  MyArray = new arrayName(10);
+MyArray[0]=1; MyArray[1]=2;MyArray[2]=3;
+MyArray[3]=4;MyArray[4]=5;MyArray[5]=6;
+MyArray[6]=7;MyArray[7]=8;MyArray[8]=9;
+MyArray[9]=10;
+alert(MyArray[7]); //Êä³ö
+</script>

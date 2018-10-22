@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>无标题页</title>
+    <script id="myscript" type="text/javascript">
+//     alert("I am script");
+    </script>
+</head>
+<body id="mybody" bgcolor=#FFFFCC>
+<h4 id="myH" align="center" >this is a text title </h4>
+<p id="myP" align ="center"><b>段落文本</b></p>
+    <table id="myT"  bgcolor="yellow" align="center" border="1" >
+        <caption id="myCaption">
+            DOM 树节点示例</caption>
+        <tr id="tr1">
+            <td style="width: 100px">table(1,1)</td>
+            <td id="myid" style="width: 100px"><hr /></td>
+            <td style="width: 100px">table(1,3)</td>
+        </tr>
+        <tr id="tr2">
+            <td style="width: 100px">
+                <div  ID="oDiv"  align="center" onclick="alert('click');"
+  onmouseover="this.style.color='#0000FF';"
+                 onmouseout="this.style.color='#FF0000';">I am a Div</div>
+            </td>
+            <td style="width: 100px"><img src="img1.jpg" /></td>
+            <td style="width: 100px">table(2,3)</td>
+        </tr>
+        <tr id="tr3">
+          <td style="width: 100px">table(3,1)&nbsp;</td>
+          <td style="width: 100px">
+            <input id="Button1" type="button" value="button" onclick="dom_example();" /></td>
+          <td style="width: 100px">table(3,3)</td>
+        </tr>
+    </table>
+ <script type="text/javascript">
+ function fun_click() {  //定义一个事件函数
+    document.getElementById("mybutton").style.backgroundColor="blue"; 
+    alert("yes, that's me");  
+ }
+  function dom_example() {
+  //1.在段落文本id为myP处添加一个text文本框标记，设置Value属性为“I am a Text”
+ var nod1=document.createElement("<input type='text'>");
+ nod1.setAttribute("value","I am a Text");
+ myP.insertBefore(nod1);
+ 
+ //2. 在文档开始处添加一个背景为红色的Div。id属性设为mydiv,里面添加文字"I am a created  DIV"
+ var nod2=document.createElement("<div style='background-color:red;'>");
+ nod2.setAttribute("id","mydiv");  
+ document.body.insertBefore(nod2);
+ mydiv.innerText="I am a created  DIV";
+ //创建一个按钮
+ var nod3=document.createElement("<input type='button' value='click  me' id='mybutton'>"); 
+ var mybutton=mydiv.appendChild(nod3);  
+ mybutton.attachEvent("onclick",fun_click);  //为该按钮添加一个click事件处理函数
+
+//3.对ID为myT的table所设置的所有属性进行循环，读取并显示出来
+  for(var i=0;i<myT.attributes.length;i++){
+        if(myT.attributes[i].specified){
+           alert(myT.attributes[i].nodeName + " = " + myT.attributes[i].nodeValue);
+         }
+   }
+   
+//4.将表格id为tr1的第行和id为tr2的第行进行交换
+  tr1.swapNode(tr2);
+
+//5. 将id为myH的标题文本换成另外一个节点(前面创建的nod2或mydiv)
+  myH.replaceNode(nod2);
+  
+//6.将oDiv的属性复制给第二步中创建的元素mydiv，但ID属性不复制。将鼠标在mydiv上移动将会发现事件属性也被复制。
+mydiv. mergeAttributes(oDiv,true);  
+// 清除mydiv的属性可用mydiv.clearAttributes(); 但不清除事件属性
+
+//7.对于表格第三行的tr3来说，有三个单元格，即有三个子节点
+  if( tr3.hasChildNodes()){
+       alert('firstChild='+tr3.firstChild.innerHTML); //返回头节点(第一个单元格)中的内容
+       alert('lastChild='+tr3.lastChild.innerHTML); //返回最后一个节点(第三个单元格)中的内容
+     for (i=0; i<tr3.childNodes.length; i++) {  //对所有子节点循环
+       var myrow=tr3.childNodes(i); //得到每个子节点对象，即每个单元格对象
+       alert(myrow.innerHTML); //显示每个单元格中的标记元素信息
+       if(i==0)alert(myrow.nextSibling.innerHTML); //返回同胞节点（单元格）中的内容
+//设置最后一个单元格的内容为一个超链接
+if(i==tr3.childNodes.length-1) myrow.innerHTML="<A href='#'>I am a Hyperlink</A>";
+     }  
+   } 
+}    
+</script>
+
+</body>
+</html>
