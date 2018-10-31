@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gb2312"?>
+<?xml-stylesheet type="text/xsl" href="ex_5_12.xsl"?>
+<roster>
+  <student>
+    <name>李华</name>
+    <origin>河北</origin>
+    <age>15</age>
+    <telephone>62875555</telephone>
+  </student>
+  <student>
+    <name>张三</name>
+    <origin>北京</origin>
+    <age>14</age>
+    <telephone>82873425</telephone>
+  </student>
+</roster>

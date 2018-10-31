@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><head><title></title>
+<style> 
+.grad1 {
+    height: 200px;
+    background: -webkit-linear-gradient(red, blue);  /*线性渐变,起点红色，慢慢过渡到蓝色*/
+    background: -o-linear-gradient(red, blue); 
+    background: -moz-linear-gradient(red, blue); 
+    background: linear-gradient(red, blue); 
+}
+.grad2 {
+    background: repeating-linear-gradient(red, blue 10%, green 20%); /*重复的线性渐变*/
+}
+    .grad3 {
+        height: 150px;
+        width: 200px;
+        background: -webkit-radial-gradient(red, green, blue); /*CSS3 径向渐变*/
+        background: -o-radial-gradient(red, green, blue);
+        background: -moz-radial-gradient(red, green, blue);
+        background: radial-gradient(red, green, blue);
+    }
+
+</style>
+</head>
+<body>
+    <div class="grad1" style="width:200px;height:100px;"></div><p/>
+    <div class="grad2" style="width:200px;height:100px;"></div><p/>
+    <div class="grad3" style="width:200px;height:100px;"></div>
+</body></html>

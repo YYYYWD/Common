@@ -1,0 +1,22 @@
+﻿<html><head><title>XML DOM example</title></head>
+  <body>
+    <script type="text/javascript">
+      //创建XML DOM 对象xmlDoc
+      var xmlDoc=new ActiveXObject("Microsoft.XMLDOM"); 
+      //加载XML文档到 XML DOM对象xmlDoc
+      xmlDoc.load("books.xml");   
+      //选择XML文档根节点，包含所有XML文档内容
+      var root=xmlDoc.documentElement;    
+      //得到根节点下的第二个book元素节点
+      var bookNode = root.childNodes[1];  
+      //得到book节点下的price子节点,处于第4个位置。从0开始计数。
+      var priceNode = bookNode.childNodes[3]; 
+      //得到price元素的文本节点
+      var textNode = priceNode.childNodes[0]; 
+      //得到price元素的文本节点值
+      var textValue = textNode.nodeValue;     
+      document.write("第二本书的价格是 "+textValue );
+    </script>
+  </body>
+  </html>
+  

@@ -1,0 +1,12 @@
+c:\users\administrator.user01511041717\documents\visual studio 2013\Projects\hello\hello\bin\Debug\hello.exe.config
+c:\users\administrator.user01511041717\documents\visual studio 2013\Projects\hello\hello\bin\Debug\hello.exe
+c:\users\administrator.user01511041717\documents\visual studio 2013\Projects\hello\hello\bin\Debug\hello.pdb
+c:\users\administrator.user01511041717\documents\visual studio 2013\Projects\hello\hello\obj\Debug\hello.csprojResolveAssemblyReference.cache
+c:\users\administrator.user01511041717\documents\visual studio 2013\Projects\hello\hello\obj\Debug\hello.exe
+c:\users\administrator.user01511041717\documents\visual studio 2013\Projects\hello\hello\obj\Debug\hello.pdb
+C:\Users\Administrator.USER01511041717\Desktop\ppt\第6章例子\hello\bin\Debug\hello.exe.config
+C:\Users\Administrator.USER01511041717\Desktop\ppt\第6章例子\hello\obj\Debug\hello.exe
+C:\Users\Administrator.USER01511041717\Desktop\ppt\第6章例子\hello\obj\Debug\hello.pdb
+C:\Users\Administrator.USER01511041717\Desktop\ppt\第6章例子\hello\bin\Debug\hello.exe
+C:\Users\Administrator.USER01511041717\Desktop\ppt\第6章例子\hello\bin\Debug\hello.pdb
+C:\Users\Administrator.USER01511041717\Desktop\ppt\第6章例子\hello\obj\Debug\hello.csprojResolveAssemblyReference.cache
