@@ -82,6 +82,46 @@
 class Solution {
 public:
     bool isMatch(string s, string p) {
-        for()
+        int lens=s.size();
+        int lenp=p.size();
+        bool **dp=new bool*[lens+2];
+        for(int i=0;i<lens+2;i++)
+        {
+            dp[i]=new bool[lenp+2];
+        }
+        for(int i=0;i<lens+2;i++)
+        {
+            for(int j=0;j<lenp+2;j++)
+            {
+                dp[i][j]=false;
+            }
+        }
+        dp[0][0]=true;
+
+        for(int i=1;i<lenp;i++)
+        {
+            if(p[i]=='*'&&dp[0][i-1])
+                dp[0][i+1]=true;
+        }
+        for(int i=0;i<lens;i++)
+        {
+            for(int j=0;j<lenp;j++)
+            {
+                if(s[i]==p[j]||p[j]=='.')
+                    dp[i+1][j+1]=dp[i][j];
+                else if(p[j]=='*')
+                {
+                    if(p[j-1]!=s[i]&&p[j-1]!='.')
+                        dp[i+1][j+1]=dp[i+1][j-1];
+                    else
+                    {
+                        dp[i+1][j+1]=(dp[i+1][j]//表示*匹配了1个字符
+                        ||dp[i][j+1]//表示*匹配了多个字符
+                        ||dp[i+1][j-1]);//表示*匹配了0个字符
+                    }
+                }
+            }
+        }
+        return dp[lens][lenp];
     }
 };

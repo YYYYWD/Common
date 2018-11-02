@@ -21,7 +21,7 @@
  * 
  * 
  * Given array nums = [-1, 0, 1, 2, -1, -4],
- * 
+ * -4,-1,-1,0,1,2
  * A solution set is:
  * [
  * ⁠ [-1, 0, 1],
@@ -32,7 +32,41 @@
  */
 class Solution {
 public:
-    vector<vector<int>> threeSum(vector<int>& nums) {
-        
+vector<vector<int> > threeSum(vector<int>& nums) {
+    vector<vector<int> >ans;
+    sort(nums.begin(),nums.end());
+    for(int i=0;i<nums.size();i++)
+    {
+    	//cout<<i<<endl;
+    	int start=i+1;
+    	int end=nums.size()-1;
+    	int sum=-nums[i];
+    	while(start<end)
+		{
+	    	if(sum==nums[start]+nums[end])
+	    	{
+	    		vector<int>ans1;
+	    		ans1.push_back(nums[i]);
+	    		ans1.push_back(nums[start]);
+	    		ans1.push_back(nums[end]);
+	    		ans.push_back(ans1);
+	    		start++;
+	    		end--;
+	    		while(start<end&&nums[start]==nums[start-1])start++;
+	    		while(start<end&&nums[end]==nums[end+1])end--;
+			}
+			else if(nums[start]+nums[end]>sum)
+			{
+				end--;
+			}
+			else
+			{
+				start++;
+			}
+			//cout<<i<<" "<<start<<" "<<end<<endl;
+	}
+			while(nums[i]==nums[i+1])i++;
     }
+    return ans;
+}
 };
