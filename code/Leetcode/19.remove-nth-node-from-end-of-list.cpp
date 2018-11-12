@@ -75,26 +75,15 @@ public:
     {
         
 
-        ListNode *D=new ListNode(0);
-        D->next=head;
-        ListNode *first = D;
-        ListNode *second =D;
-        int n1=n;
-        while(n1--)
-        {
-            first=first->next;
+          if (!head->next) return NULL;
+        ListNode *pre = head, *cur = head;
+        for (int i = 0; i < n; ++i) cur = cur->next;
+        if (!cur) return head->next;
+        while (cur->next) {
+            cur = cur->next;
+            pre = pre->next;
         }
-        while(first->next!=NULL)
-        {
-            first=first->next;
-            second=second->next;
-        }
-        if(second->next==head)
-        {
-            head=head->next;
-            return head;
-        }
-        second->next=second->next->next;
+        pre->next = pre->next->next;
         return head;
 
     }*/
