@@ -1,0 +1,42 @@
+﻿<html><head>
+<title>新建网页 1</title>
+<script>
+var people = {    //将 JSON 格式的数据字符串赋给people变量
+    "programmers": [{
+        "firstName": "Brett",
+        "lastName": "McLaughlin",
+        "email": "aaaa"
+    }, {
+        "firstName": "Elliotte",
+        "lastName": "Harold",
+        "email": "cccc"
+    }],
+    "authors": [{
+        "firstName": "Isaac",
+        "lastName": "Asimov",
+        "genre": "sciencefiction"
+    }, {
+        "firstName": "Tad",
+        "lastName": "Williams",
+        "genre": "fantasy"
+    }],
+    "musicians": [{
+         "firstName": "Sergei",
+        "lastName": "Rachmaninoff",
+        "instrument": "piano"
+    }]
+};
+//长字符串实际上只是一个数组
+var p=people.programmers[1].lastName;
+document.write(p);
+var g=people.authors[0].genre ;
+document.write("<Br>"+g);
+//修改JSON的值
+people.musicians[0].lastName="欧阳";
+var l=people.musicians[0].lastName;
+document.write("<Br>"+l);
+</script>
+</head>
+<body>
+</body>
+</html>

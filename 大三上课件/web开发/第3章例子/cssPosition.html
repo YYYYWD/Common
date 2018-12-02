@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        .pos {
+            /* position为absolute时表示绝对定位，原点在所属窗口或框架页面文档显示区域的左上角。
+    position为relative表示相对位置，相对本元素的父元素的位置。
+    position为static（默认值） 表示静态位置，按照HTML文件中各元素的先后顺序显示。*/
+            position: absolute; /*position为absolute时，LEFT和TOP属性分别用于设置元素与窗口
+                           或框架左端以及上端的距离；当POSITION为RELATIVE时，LEFT和TOP属性
+                           分别用于设置元素与父元素左端以及上端的距离。 */
+            left: 50px; /*X坐标*/
+            top: 50px; /*Y坐标*/
+            Z-INDEX: 1; /*z-index的取值为整数，可为正，也可为负。用于元素的遮挡设定，值较高的元素覆盖较低的元素。*/
+        }
+
+        .pos4span {
+            position: absolute;
+            left: 50px; /*X坐标*/
+            top: 50px; /*Y坐标*/
+        }
+    </style>
+</head>
+<body>
+    <div id="parent" class="pos" style="border-style: solid; background-color: yellow; width: 300px; height: 200px;">
+        We are friends
+      <div id="son" class="pos4span" style="border-style: dashed; width: 100px; height: 100px;"></div>
+    </div>
+
+    <div style="position: absolute; left: 100px; top: 100px; z-index: 0; border-style: solid; background-color: red; width: 300px; height: 200px;">
+        We are best friends!
+    </div>
+
+</body>
+</html>
+
+
+
+

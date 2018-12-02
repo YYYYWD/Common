@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<base href="file:///C:/Users/Administrator.USER01511041717/Desktop/ppt/第3章例子/htmlcontrol.html">
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312"/>
+    <title></title>
+</head>
+<body>
+    <div align="center">
+        <fieldset style="width:500px; background-color: #ff99cc;" >
+            <legend >用户登录</legend>
+
+            <form action="login.aspx" method="post">
+                帐号：<input id="UserName" type="text" /><br/><br/>
+                密码：<input id="UserPassword" type="password" /><p/>
+                选择课程：<select id="Course">
+                    <option value="计算机基础" selected>计算机基础</option>
+                    <option value="C语言程序设计">C语言程序设计</option>
+                    <option value="数据结构">数据结构</option>
+                    <option value="数据库原理">数据库原理</option>
+                    <option value="C++程序设计">C++程序设计</option>
+                </select>
+                <p/>
+              
+                <input type=radio checked id="kd" value="教师">教师
+                <input type=radio id=kd value="学生">学生 <p></p>
+                
+                签字笔<input type=checkbox id="ch1" checked>
+                钢笔<input type=checkbox id="ch2">
+                圆珠笔<input type=checkbox id="ch3"><p/>
+                
+                请选择文件：<Input Type="file" id="Myfile"><p/>
+
+                
+                备注：
+                <textarea rows="5" cols="30"></textarea><p/>
+                
+                    <input type="submit" value="登录" id="Submit" />
+                    <input type="reset" value="重填" id="Reset" />
+</form>
+
+        </fieldset>
+
+    </div>
+
+</body>
+</html>

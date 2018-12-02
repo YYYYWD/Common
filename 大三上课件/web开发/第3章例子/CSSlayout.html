@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+       .mydiv {
+            visibility: visible; /*为hidden时隐藏该元素*/
+            overflow: scroll;   /*为auto时自动出现滚动条*/
+            cursor:hand;
+            border-style:solid; 
+        }         
+    </style>
+
+</head>
+<body>
+    <input id="Button1" type="button" value="hide" onclick="innerDiv.style.visibility ='hidden';"/>
+    <input id="Button2" type="button" value="Show" onclick="innerDiv.style.visibility ='visible';"/>
+    
+     <div class="mydiv";style="height: 103px;width: 250px;">
+        We are best friends!
+         <div id="innerDiv" style="border-style:dotted;height: 50px;width: 50px;">
+
+         </div>
+    </div>
+
+</body>
+</html>
+
+
+
+

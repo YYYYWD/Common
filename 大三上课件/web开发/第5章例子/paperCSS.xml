@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="gb2312"?>
+<?xml-stylesheet  type="text/css"?>
+<paper xmlns:HTML="http://www.w3.org/1999/xhtml">
+<!-- 样式单定义-->
+  <HTML:STYLE>
+    paper {display:block;font-size:20px;line-height:160%;text-align:center}
+    author{display:block; font-size:16px;margin-top:5px;margin-bottom:5px}
+    address{display:block; font-size:16px; text-align:center}
+    abstract{display:block;  font-size:20px; font-weight:bold; font-style:italic;text-align:left}
+    abstract#al{display:block; font-size:14px; font-weight:normal; font-style: normal; line-height:150%;}
+    keywords{display:block; font-size:20px; font-weight:bold;  font-style: italic;}
+    keywords#al{display:block;font-size:14px; font-weight:normal;font-style: normal; line-height:150%;}
+    head{display:block;font-size:20px; line-height:150%}
+    text{display:block; font-size:18px; text-align:left; text-indent:30pt;line-height:150%;}
+  </HTML:STYLE>
+  
+<title>E-learning中的个性化技术研究</title>
+  <author>Hao Xingwei</author>
+  <address>
+    (Shandong University,School of Computer Science and Technology ,Jinan,250100)
+  </address>
+  <abstract>Abstract: </abstract>
+  <abstract ID="al">
+    E-learning is now becoming a very important means in modern education,but the existing E-learning systems are short of 
+
+pernonalization,the model of teaching is so simple that the procedures of learning are almost the same. How to build a personalization 
+
+learning circumstance,…
+  </abstract>
+  <keywords>Keywords:</keywords>
+  <keywords ID="al">
+    E-learning,Kowledge point,pernonalized service,Web discovery
+  </keywords>
+  <head>0.前言</head>
+  <text>E-learning是指基于网络的、电子化、数字化、多媒体的教学方式。在实际应用中，E-learning的范畴非常广泛，它不仅包含基于互联网的网络化学
+
+习，还包括了基于多媒体资料的数字化学习。随着Internet的快速发展和普及，以及教育的全球化和由此带来的教育竞争的加剧，基于Web的E-learning系统已
+
+经成为许多大学和教育机构实施现代化远程教育的重要手段。
+  </text>
+</paper>
+
+ 
