@@ -1,12 +1,27 @@
+<!DOCTYPE HTML>
 <html>
-
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>新建网页 1</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+    <style>
+        div
+        {
+            position: absolute;
+            
+        }
+    </style>
 </head>
+<body>
 
-<body bgcolor="rgb(255,250,50)">
-<A id="mylink"  href="aa.htm" title="It's me">我是超链接</A>
 </body>
-
 </html>
+<script>
+    $(function() {
+        var $targetName = $('p');
+       console.log('p len:',$targetName.length);
+
+        for(var i=0;i<$targetName.length;i++) {
+            console.log($targetName.eq(i).html());
+        }
+    });
+</script>
