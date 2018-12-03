@@ -94,6 +94,9 @@ git remote –v 查看远程库的详细信息
 
 git push origin master Git会把master分支推送到远程库对应的远程分支上
 
+<<<<<<< HEAD
+git checkout -f  碰到的问题
+=======
 
 首次提交
 git remote add origin git@github.com:yyyywd/仓库名
@@ -102,3 +105,4 @@ git push origin master
 
 
 
+>>>>>>> d710ef21644c5918a1461e34c3ff729c4f1d92bf
