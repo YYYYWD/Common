@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style type="text/css">
+            td{
+                color: gray;
+            }
+        </style>
+        <script>
+
+                setInterval("change()",100);
+                function change()
+                {
+                    //alert("1");
+                    var c1=document.getElementsByTagName("td");
+                    //alert(c1.length());
+                    for(var i=0;i<c1.length;i++)
+                    {
+                        if(c1[i].style.color=='red')
+                            c1[i].style.color='blue';
+                        else
+                            c1[i].style.color='red';
+                    }
+                    if(c1=="red")
+                    document.getElementsByTagName("td").style.color="blue";
+                    else
+                    document.getElementsByTagName("td").style.color="red";
+                }
+                function changeColor(){
+    
+                var color="#f00|#0f0|#00f|#808|#534";//定义一条变换颜色的字符串
+                //alert(color);
+                color=color.split("|");//然后通过split方法进行分割
+    
+                var xuan=document.getElementsByTagName("td");//获得元素
+    
+    
+    
+                    for(var i=0;i<xuan.length;i++){
+    
+                    xuan[i].style.color=color[parseInt(Math.random()*color.length)];//设置样式
+    
+                    }
+    
+    }
+    
+            </script>
+    </head>
+
+    <body>
+        <table border="1">
+            <script type="text/javascript">
+            for(var i=0;i<8;i++)
+            {
+                document.write("<tr>")
+                for(var j=0;j<10;j++)
+                {
+                    document.write("<td>"+i+","+j+"</td>");
+                }
+                document.write("</tr>");
+            }
+            </script>
+        </table>
+        
+    </body>
+</html>
