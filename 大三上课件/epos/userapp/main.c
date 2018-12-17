@@ -130,7 +130,7 @@ void main(void *pv)
     //list_graphic_modes();
     init_graphic(0x143); //进入图形界面
     //input();
-    //DDAline2(xx0,yy0,xx1,yy1,RGB(255,255,255));
+    DDAline2(xx0,yy0,xx1,yy1,RGB(255,255,255));
     //control();
     //DDAline2(60,0,500,0,RGB(255,255,255));
     //Bresenham(60,0,500,0,RGB(255,255,255));
@@ -142,7 +142,7 @@ void main(void *pv)
     //printf("%d %d %d %d",xx0,yy0,xx1,yy1);
  
     //control_line();
-    control_Circle();
+    //control_Circle();
     //Bresenham_Circle(0,0,50,RGB(255,255,255));
     //Mid_ellipse(500,500,80,60,RGB(255,255,255));
     //lcd_put_ascii(50,50,c[0],RGB(255,255,255));
