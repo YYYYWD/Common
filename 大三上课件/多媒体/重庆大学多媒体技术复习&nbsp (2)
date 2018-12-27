@@ -1,0 +1,221 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<title>重庆大学多媒体技术复习&nbsp;- </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>南京廖华</o:Author>
+  <o:LastAuthor>南京廖华</o:LastAuthor>
+  <o:Revision>6</o:Revision>
+  <o:TotalTime>59</o:TotalTime>
+  <o:Created>2018/12/27 11:59:17</o:Created>
+  <o:LastSaved>2018/12/27 11:59:17</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>101</o:Words>
+  <o:Characters>576</o:Characters>
+  <o:Company>南京廖华</o:Company>
+  <o:Lines>4</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>676</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:16.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-next:正文;
+	margin-top:17.0pt;
+	margin-right:0cm;
+	margin-bottom:16.5pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:240%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:22.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 89.85pt 72.0pt 89.85pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:42.55pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-CN link=blue vlink=purple style='tab-interval:21.0pt;text-justify-trim:punctuation'>
+
+<div class=Section1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";color:#993300'>《重庆大学多媒体技术复习&nbsp;- 》来自南京廖华</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:12.0pt;color:#993300'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:150%;margin-top:3.6pt;'><span lang=EN-US style='font-size:9.0pt;line-height:150%'><a href="http://m.wodefanwen.com/mlhs_sstio6hlzi1yhlmhw2fo3jggkdrhl9fhc01203202q03703401n01900w_1.html"><span lang=EN-US style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";text-decoration:none;text-underline:none'><span lang=EN-US>点这里，有很多篇《重庆大学多媒体技术复习&nbsp;- 》</span></span></a><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-size:12.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";color:#993300'>在线阅读本文：</span><span lang=EN-US style='font-size:12.0pt;color:#999999'><a href="http://m.wodefanwen.com/mlhd_7mim20sb831emx02t1mw_3.html"><span
+style='text-decoration:none;text-underline:none'>http://m.wodefanwen.com/mlhd_7mim20sb831emx02t1mw_3.html</span></a><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:15.6pt;margin-right:0cm;margin-bottom:23.4pt;margin-left:0cm;mso-para-margin-top:1.0gd;mso-para-margin-right:
+0cm;mso-para-margin-bottom:1.5gd;mso-para-margin-left:0cm;text-align:center'><b style='mso-bidi-font-weight:normal'><span style='font-size:22.0pt;font-family:
+宋体'>重庆大学多媒体技术复习&nbsp;- <span lang=EN-US><o:p></o:p></span></span></b></p>
+
+<div style='margin-top:2.5pt;margin-bottom:2.5pt'>
+
+<div style='margin-top:7.8pt;margin-right:0cm;margin-bottom:12.45pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm;mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm;text-align:justify;text-justify:inter-ideograph;text-indent:32.0pt;mso-char-indent-count:2.0;line-height:22.0pt;mso-line-height-rule:exactly;mso-pagination:none;font-size:16.0pt;mso-bidi-font-family:"Times New Roman";mso-font-kerning:1.0pt'><p>秒（50场每秒），视像带宽为6MHz，色度信号采用频率调制，声音用调频制，总的电视通道带宽为8MHz。  </p><p>全电视信号：在彩色电视系统中把视频信号（图像信号），复合同步信号和复合消隐信号在一起，形成全电视信号。   </p><p>2、图像子采样定义和理论依据，为什么可以进行图像子采样。 </p><p>对彩色电视图像进行采样时，如果对色差信号使用的采样频率比对亮度信号使用的采样频率低，这种采样就叫做图像子采样。  依据是：a.人眼对色度信号的敏感程度比对亮度信号的敏感程度低（去掉一些颜色信号不易察觉），b.人眼对图像细节的分辨能力有一定的局限性（去掉高频信号不易察觉）。 </p><p>3、在不同子采样下，彩色图像的样本数。 </p><p>4：4：4 YCbCr(4个亮度样本，2个红色样本，2个蓝色样本) 4：2：2YCbCr4：1：1YCbCr4：2：0YCbCr  </p><p>一副YUV彩色图像的分辨率为720*576，分别采用4：2：2，4：1：1子采样格式时的样本数 4：2：2  =》平均（4+4+2）/4=2     720*576*2=》样本数1 4：1：1 =》平均（4+1+1）/4=1.5     720*576*1.5=》样本数2 </p><p> </p><p>4、数字高清电视的概念。 </p><p> 常见接口名称/4K/UHD/列举最新电视种类     </p><p>第9章 MPEG简介 </p><p>1、MPEG是什么？运动图像数据压缩主要根据。 </p><p> MPEG是在1988.5由国际标准化组织和国际电工委员会联合成立的专家组，专家组开</p><p>发的标准成为MPEG标准。      </p><p> a.亮度比色彩的敏感度高 b.分辨率有上限。 </p><p>2、MPEG1，MPEG2和MPEG4 的特点和应用领域。 </p><p> MPEG2-PS主要应用于存储的具有固定时长的节目，如DVD电影，  MPEG2-TS主要应用于实时传送的节目，比如实时广播的电视节目。 </p><p> MPEG-4是支持内容基的压缩编码方法，突破了MPEG-1、MPEG-2以矩形块处理图像的方法。  </p><p>第10章 MPEG声音 </p><p>1、听觉系统的感知特性、定义。  听阈、痛阈等。 </p><p>声音的响度就是声音的强弱，用频率表示音高，一种频率的声音阻碍听觉系统感受另一种频率的声音的现象成为掩蔽效应。（频域掩蔽（强盖弱），临界掩蔽（人耳刚可以感知的两种频率的声音的差别的范围），时域掩蔽（声音在相邻时间之间的掩蔽效应））  当声音弱到人耳刚可以听见时，称此时的声音强度为“听阈”，当声音强到使人耳感到疼痛，称此时的声音强度为“痛阈”。 </p><p>2、声音的掩蔽特性。  </p><p>3、心理声学模型的要点。 </p><p>a.考虑了听觉阈值的概念  b.利用了听觉系统的掩蔽效应。  </p><p>掩蔽效应是心理声学模型的基础。  </p><p>4、MPEG1的声音压缩层次，如何利用人的听觉系统的特性。 </p><p>第一层：仅利用频域掩蔽特性，典型的压缩比为4：1，相应的数据率为384kbps，第二层利用频域掩蔽特性和时间掩蔽特性，典型的压缩比为（6：1）~（8：1），数据率为256~192kbps,第三层利用了频域掩蔽特性，时间掩蔽特性，和临界掩蔽特性，典型的压缩比为（10;1）~（12：1），相应的数据率为128~112kbps，声音质量接近CD-DA。 </p><p>5、MPEG-1、MPEG-2、MPEG-3、MPEG-4和MPEG-7的主要内容和他们之间的关系。 </p><p>MPEG1和MPEG2用于运动图像数字压缩标准  </p><p>MPEG4用于运动图像数字压缩标准和媒体应用。它是对一副图像分割成不同的子块，他是基于内容基的编码方法 。  </p><p>MPEG2-TS和MPEG2-PS的区别：后者只能传送只有固定的字长的文件；前者主要应用于实时传送的节目。  </p><p>MPEG7旨在解决信息描述的标准问题。它的具体做法就是加上元数据，便于检索和处理，他是对三个标准的补充。  </p><p>MPEG21将不同的协议，标准等有机的结合起来，为多媒体信息的用户提供透明的应用和一个完整的平台。  </p><p>MPEG声音压缩编码算法中的三个特性：响度，音高和掩蔽效应。 </p><p>  </p><p>6、TTS系统的概念及其应用场合。 </p><p>是使用计算机把文字转换为声音输出的过程，它的最终目标是使计算机像人一样输出清晰</p><p>又自然的声音。也就是可以阅读不同的语调。 </p><p>7、DLNA。 </p><p>DLNA的全称是DIGITAL LIVING NETWORK ALLIANCE， 其宗旨是Enjoy your music, photos and videos, anywhere anytime， DLNA(Digital Living Network Alliance) 由索尼、英特尔、微软等发起成立、旨在解决个人PC，消费电器，移动设备在内的无线网络和有线网络的互联互通，使得数字媒体和内容服务的无限制的共享和增长成为可能，目前成员公司已达280多家。 </p><p>DLNA并不是创造技术，而是形成一种解决的方案，一种大家可以遵守的规范。所以，其选择的各种技术和协议都是当前所应用很广泛的技术和协议。 </p><p>DLNA将其整个应用规定成5个功能组件。从下到上依次为：网络互连，网络协议，媒体传输，设备的发现控制和管理，媒体格式。 </p><p> </p><p>第11章 MPEG电视 </p><p>1、MPEG的图像类型（3种电视图像对象(VO)的概念即MPEG Video 压缩算法中定义了三种图像）和特点。 </p><p> 压缩比例的比较。 </p><p>a.帧内图像I（为其他帧图像的编码和解码作参考）   </p><p>b.预测图像P（以在他之前出现的帧内图像作参考，对预测图像进行编码就是对他们之间的差值进行编码）    </p><p>c.双向预测图像B（在他之前和之后出现的帧图像作参考，对双向预测图像进行编码就是对帧内图像和预测图像的差值分别进行编码） </p><p>    </p><p> </p><p> 2、MPEG-video压缩技术的基本思想和方法。 </p><p>在图像空间压缩方面，对单帧图像数据，采用JPEG压缩算法来除掉帧内的冗余信息；在时间方面，对连续多帧图像，采用移动补偿算法来除掉帧间冗余信息。  </p><p>第12章 只读光盘存储器 </p><p>CD各个标准（例如白皮书等）。 CD-DA音乐的采样频率。44.1 kHz DVD提高存储容量的方法。 光盘记录0和1的方式。 </p><p>只读光盘通常是指CD/DVD 系列只读光盘。在盘上压制凹坑的机械办法来记录“0”和“1”。 凹坑的边缘代表“1”，凹坑和非凹坑的平坦部分代表“0”，凹坑的长度和非凹坑的长度都代表有多少个“0”。 </p><p>计算CD某种声音的数据量，并能够说明参数选择的原因。 什么通道编码，为什么进行通道编码，通道编码的基本步骤。 市场上的云存储的服务提供商、种类和基本功能。  </p><p>景深的概念以及控制景深的基本方法： </p><p>当镜头聚集于被摄影物的某一点时，这一点上的物体就能在电视画面上清晰地结像。在这一点前后一定范围内的景物也能记录得较为清晰。超过这个范围就不清晰了。这就是说，镜头拍摄景物的清晰范围是有一定限度的。镜头的这种记录得“较为清晰”的被摄影物纵深的范围便为景深。   </p><p>1.改变拍摄距离：使用同一支镜头焦距恒定时，当光圈一定时，拍摄距离越远，景深越大；拍摄距离越近，景深越小。 </p><p>2.改变光圈大小：使用同一支镜头焦距恒定，当拍摄距离一定，光圈小，景深大；光圈大，景深小。 3.改变镜头焦距：在同一拍摄距离，使用相同光圈的情况下，短焦距时，景深大；长焦距时，景深小。   </p><p>   </p><p>数码相机快门、光圈、ISO和白平衡的概念及对作品的作用： </p><p>光圈，就是控制镜头通光量大小的 快门，是控制光线通过镜头的时间的 </p><p>ISO（感光度）调到越高，拍出来的照片噪点就越多，所以ISO不是越高越好，只是在光线不足的情况下使用，并且尽可能调低ISO数值。   </p><p></p></div>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:12.45pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm;mso-para-margin-bottom:.8gd;mso-para-margin-left:0cm;text-align:justify;text-justify:inter-ideograph;text-indent:32.0pt;mso-char-indent-count:2.0;line-height:24.0pt;mso-line-height-rule:exactly;mso-pagination:none'><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-family:"Times New Roman";mso-font-kerning:1.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter align=center style='text-align:center'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";color:#993300'>南京廖华</span><span lang=EN-US><a
+href="http://m.wodefanwen.com/">http://m.wodefanwen.com/</a></span></p>
+
+<p class=MsoFooter align=center style='text-align:center'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";color:#993300'>免费文档下载</span><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:10.0pt;color:#993300'><o:p></o:p></span></p>
+
+</div></div>
+</body></html>

@@ -9,67 +9,44 @@
 #include<vector>
 using namespace std;
 
-//寻找任意一个等于target的数字
-int binary(int nums[],int target,int length)
-{
-	int left=0;
-	int right=length-1;
-	while(left<right)
-	{
-		int mid=left+(right-left)/2;
-		if(nums[mid]==target)return mid;
-		else if(nums[mid]<target)left=mid+1;
-		else
-			right=mid;
-	}
-	if(left==target)
-		return left;
-	else
-		return -1;
-} 
+ int maxSubArray(vector<int>& nums) {
+        int dp[100000]={0};
+        for(int i=0;i<nums.size();i++)
+        {
+            if(i-1<0)
+            {
+                dp[i]=nums[i];
+            }
+            else
+            {
+            if(dp[i-1]<0)
+            {
+                
+                    dp[i]=nums[i];
+            }
+                
+            else
+                dp[i]=dp[i-1]+nums[i];
+            }
+            
+        }
+        int ans=INT_MIN;
+        for(int i=0;i<nums.size();i++)
+        {
+        	cout<<dp[i]<<endl;
+            if(ans<dp[i])
+                ans=dp[i];
+        }
+        
+        return ans;
 
-//求下界 ，返回的是第一个等于target的数字 
-int lower_binary(int nums[],int target,int length) 
-{
-	int left=0;
-	int right=length-1;
-	while(left<right)
-	{
-		int mid=left+(right-left)/2;
-		if(nums[mid]<target)
-			left=mid+1;
-		else
-			right=mid; //nums[mid]<=target right一直往左边靠 
-	}
-	if(nums[left]==target)
-		return left; //返回的是第一个等于target的数字 
-		//return left-1  //返回的是第一个小于target的数字 
-	else
-		return -1;
-}
-//求上界 ,返回的是第一个大于target的位置
-int up_binary(int nums[],int target,int length) 
-{
-	int left=0;
-	int right=length-1;
-	while(left<right)
-	{
-		int mid=left+(right-left)/2;
-		if(nums[mid]<=target)
-			left=mid+1;
-		else
-			right=mid;
-	}
-	if((right-1)>=0&&nums[right-1]==target)
-		return right;//返回的是第一个大于target的位置
-		//return right-1; //返回的是最后一个等于target的位置
-	else
-		return -1;
-	
-}
+    }
 int main()
 {
-	int a[]={1,1,1,1,1,1,1,2};
-	cout<<up_binary(a,1,8)<<endl;
+	vector<int>a;
+	int aa[2]={-2,-1};
+	for(int i=0;i<2;i++)
+		a.push_back(aa[i]);
+	cout<<maxSubArray(a)<<endl;
+	return 0;
 }
-

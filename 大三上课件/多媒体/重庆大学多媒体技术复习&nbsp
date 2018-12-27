@@ -1,0 +1,221 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<title>重庆大学多媒体技术复习&nbsp;- </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>南京廖华</o:Author>
+  <o:LastAuthor>南京廖华</o:LastAuthor>
+  <o:Revision>6</o:Revision>
+  <o:TotalTime>59</o:TotalTime>
+  <o:Created>2018/12/27 11:58:28</o:Created>
+  <o:LastSaved>2018/12/27 11:58:28</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>101</o:Words>
+  <o:Characters>576</o:Characters>
+  <o:Company>南京廖华</o:Company>
+  <o:Lines>4</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>676</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:16.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-next:正文;
+	margin-top:17.0pt;
+	margin-right:0cm;
+	margin-bottom:16.5pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:240%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:22.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 89.85pt 72.0pt 89.85pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:42.55pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-CN link=blue vlink=purple style='tab-interval:21.0pt;text-justify-trim:punctuation'>
+
+<div class=Section1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";color:#993300'>《重庆大学多媒体技术复习&nbsp;- 》来自南京廖华</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:12.0pt;color:#993300'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:150%;margin-top:3.6pt;'><span lang=EN-US style='font-size:9.0pt;line-height:150%'><a href="http://m.wodefanwen.com/mlhs_sstio6hlzi1yhlmhw2fo3jggkdrhl9fhc01203202q03703401n01900w_1.html"><span lang=EN-US style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";text-decoration:none;text-underline:none'><span lang=EN-US>点这里，有很多篇《重庆大学多媒体技术复习&nbsp;- 》</span></span></a><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-size:12.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";color:#993300'>在线阅读本文：</span><span lang=EN-US style='font-size:12.0pt;color:#999999'><a href="http://m.wodefanwen.com/mlhd_7mim20sb831emx02t1mw_1.html"><span
+style='text-decoration:none;text-underline:none'>http://m.wodefanwen.com/mlhd_7mim20sb831emx02t1mw_1.html</span></a><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:15.6pt;margin-right:0cm;margin-bottom:23.4pt;margin-left:0cm;mso-para-margin-top:1.0gd;mso-para-margin-right:
+0cm;mso-para-margin-bottom:1.5gd;mso-para-margin-left:0cm;text-align:center'><b style='mso-bidi-font-weight:normal'><span style='font-size:22.0pt;font-family:
+宋体'>重庆大学多媒体技术复习&nbsp;- <span lang=EN-US><o:p></o:p></span></span></b></p>
+
+<div style='margin-top:2.5pt;margin-bottom:2.5pt'>
+
+<div style='margin-top:7.8pt;margin-right:0cm;margin-bottom:12.45pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm;mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm;text-align:justify;text-justify:inter-ideograph;text-indent:32.0pt;mso-char-indent-count:2.0;line-height:22.0pt;mso-line-height-rule:exactly;mso-pagination:none;font-size:16.0pt;mso-bidi-font-family:"Times New Roman";mso-font-kerning:1.0pt'><p>第1章 概要 </p><p>1、多媒体和多媒体技术的定义、分类： </p><p>分类：多媒体硬件系统、多媒体操作系统、媒体处理系统工具和用户应用软件。   多媒体是融合两种或者两种以上媒体的人——机互动的信息交流和传播媒体； 多媒体的主要特点是多样性，集成性，交互性，实时性。 </p><p>2、多媒体的特点  </p><p>多媒体技术有以下几个主要特点：   </p><p>（1）集成性 能够对信息进行多通道统一获取、存储、组织与合成。   </p><p>（2）控制性 多媒体技术是以计算机为中心，综合处理和控制多媒体信息，并按人的要求以多种媒体形式表现出来，同时作用于人的多种感官。    </p><p>（3）交互性 交互性是多媒体应用有别于传统信息交流媒体的主要特点之一。传统信息交流媒体只能单向地、被动地传播信息，而多媒体技术则可以实现人对信息的主动选择和控制。  （4）非线性 多媒体技术的非线性特点将改变人们传统循序性的读写模式。以往人们读写方式大都采用章、节、页的框架，循序渐进地获取知识，而多媒体技术将借助超文本链接（Hyper Text Link）的方法，把内容以一种更灵活、更具变化的方式呈现给读者。   （5）实时性 当用户给出操作命令时，相应的多媒体信息都能够得到实时控制。  （6）信息使用的方便性 用户可以按照自己的需要、兴趣、任务要求、偏爱和认知特点来使用信息，任取图、文、声等信息表现形式。   </p><p>（7）信息结构的动态性 “多媒体是一部永远读不完的书”，用户可以按照自己的目的和认知特征重新组织信息，增加、删除或修改节点，重新建立链。  </p><p>3、SGML， HTML，HTML5， VRML、XML含义与关系 </p><p>标准通用标记语言（SGML）可以用来定义文档结构和文档内容的标签。  超文本标记语言（HTML）是面向显示的标记语言。  </p><p>虚拟现实造型语言（VRML）是创建含有三维交互对象的Web网页程序设计语言。    </p><p>4、新媒体、跨媒体的概念。 </p><p>所谓跨媒体传播是指信息在不同媒体之间的流布与互动，它至少包含两层含义：其一是指相互信息在不同媒体之间的交叉传播与整合。其二是指媒体之间的合作、共生、互动与协调。 </p><p>5、交互设计的通用原则。 </p><p>1.就近原则：恰当的组织和分类； 2.容错原则：允许用户犯错； 3.帮助原则：提供适量的帮助； 4.习惯原则：符合用户使用习惯； 5.响应原则： 6.精简原则： </p><p> </p><p>6、Web 2.0/RSS/SNS </p><p>Web2.0（也有人称之为互联网2.0）是相对Web1.0的新的一类互联网应用的统称。Web1.0的主要特点在于用户通过浏览器获取信息，Web2.0则更注重用户的交互作用，用户既是网站内容的消费者（浏览者），也是网站内容的制造者。 </p><p>RSS是RDF Site Summary 的缩写（RDF是Resource Description Framework的缩写 ），是指将网站摘要用xml语言描述。   </p><p>RSS是站点用来和其他站点之间共享内容的一种简易方式（也叫聚合内容），通常被用于新闻和其他按顺序排列的网站，例如Blog。  </p><p> SNS：Social Network Sofware，社会性网络软件，依据六度理论，以认识朋友的朋友为基础，扩展自己的人脉。并且无限扩张自己的人脉，在需要的时候，可以随时获取一点，得到该人脉的帮助。SNS是一个采用分布式技术，通俗地说是采用P2P技术，构建的下一代基于个人的网络基础软件。SNS通过分布式软件编程，将现在分散在每个人的设备上的CPU、硬盘、带宽进行统筹安排，并赋予这些相对服务器来说很渺小的设备更强大的能力。这些能力包括：计算速度，通信速度，存储空间。 </p><p> </p><p>第2章 数字声音和MIDI </p><p>1、声音信号数字化的定义和步骤，在数字话过程中对声音质量的影响。 </p><p>定义：将具有一定幅度和频率的连续变化的模拟声音信号，通过A/D转换器以一定的频率对模拟信号截取一个振幅值，并用指定字长的二进制未来表示，从而将连续的模拟音频信号转变成能被计算机处理的离散的数字音频信号。  </p><p>步骤：采样（采样频率不应该低于声音信号最高频率的两倍，这样就能做到无损数字化）  </p><p>（采样精度：a.量化位数，b.信噪比）  </p><p>量化（把采样得到的声音信号幅度转换成数字值）  </p><p>对声音质量有关的重要因素是：采样频率 量化位数 声道数  </p><p>对声音质量的度量有两种基本的方法：一种是客观质量度量，另一种是主观质量度量。 </p><p>2、人的听力范围。 </p><p>人的听力范围：20——20k HZ   话音信号：300——3k HZ  </p><p>3、采样定理。 </p><p>香农采样定理，又称奈奎斯特采样定理，是信息论，特别是通讯与信号处理学科中的一个重要基本结论。1924年奈奎斯特(Nyquist)就推导出在理想低通信道的最高大码元传输速率的公式：理想低通信道的最高大码元传输速率=2W*log2 N （其中W是理想低通信道的带宽，N是电平强度） </p><p>采样频率根据什么原则来确定？ </p><p>奈奎斯特理论和声音信号本身的最高频率。 </p><p>4、声音文件的数据量： </p><p> （采样频率× 量化精度× 声道数× 时间）/ 8（采样频率– Hz ，时间–秒，数据量–字节） </p><p>5、 MIDI音频和波形音频的区别。  </p><p>MIDI是指电子乐器数字接口 ；MIDI 传输的不是声音信号, 而是音符、控制参数等指令, 它指示MIDI 设备要做什么,怎么做, 如演奏哪个音符、多大音量等。它们被统一表示成MIDI 消息，波形音频传输的是模拟信号,也就是电信号 </p><p> </p><p>第3章 话音编码 </p><p>1、声音音频编码的类别及其优缺点。 </p><p>波形编译码器：话音质量高，但是数据率也高；  </p><p>音源编译码器：数据率低，但是合成话音的质音有待提高； 混合编译码器：数据率和音质介于以上二者之间。 </p><p>2、脉冲编码调制技术（区分均匀量化，非均匀）。 </p><p>如果采样相等的量化间隔对采样得到的信号做量化，那么这种量化称为均匀量化。 对输入信号进行量化时，大的输入信号采用大的量化间隔，小的输入信号采用小的量化间隔，这就是非均匀量化。 </p><p>注：脉冲编码调制的基本过程： </p><p>采样（采样频率不应该低于声音信号最高频率的两倍，这样就能做到无损数字化）  （采样精度：a.量化位数，b.信噪比）  </p><p>量化（把采样得到的声音信号幅度转换成数字值）  </p><p>3、增量调制（位数等特点）的编码过程以及中间提到的几个概念，如斜率过载和粒状噪声等。 </p><p>增量调制是一种预测编码技术，是PCM编码的一种变形（他是对实际的采样信号与预测的采样信号之差的极性进行编码）  </p><p></p></div>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:12.45pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm;mso-para-margin-bottom:.8gd;mso-para-margin-left:0cm;text-align:justify;text-justify:inter-ideograph;text-indent:32.0pt;mso-char-indent-count:2.0;line-height:24.0pt;mso-line-height-rule:exactly;mso-pagination:none'><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-family:"Times New Roman";mso-font-kerning:1.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter align=center style='text-align:center'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";color:#993300'>南京廖华</span><span lang=EN-US><a
+href="http://m.wodefanwen.com/">http://m.wodefanwen.com/</a></span></p>
+
+<p class=MsoFooter align=center style='text-align:center'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";color:#993300'>免费文档下载</span><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:10.0pt;color:#993300'><o:p></o:p></span></p>
+
+</div></div>
+</body></html>

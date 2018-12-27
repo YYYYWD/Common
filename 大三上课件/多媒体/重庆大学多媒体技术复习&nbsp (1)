@@ -1,0 +1,221 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<title>重庆大学多媒体技术复习&nbsp;- </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>南京廖华</o:Author>
+  <o:LastAuthor>南京廖华</o:LastAuthor>
+  <o:Revision>6</o:Revision>
+  <o:TotalTime>59</o:TotalTime>
+  <o:Created>2018/12/27 11:58:54</o:Created>
+  <o:LastSaved>2018/12/27 11:58:54</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>101</o:Words>
+  <o:Characters>576</o:Characters>
+  <o:Company>南京廖华</o:Company>
+  <o:Lines>4</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>676</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:16.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-next:正文;
+	margin-top:17.0pt;
+	margin-right:0cm;
+	margin-bottom:16.5pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:240%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:22.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 89.85pt 72.0pt 89.85pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:42.55pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-CN link=blue vlink=purple style='tab-interval:21.0pt;text-justify-trim:punctuation'>
+
+<div class=Section1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";color:#993300'>《重庆大学多媒体技术复习&nbsp;- 》来自南京廖华</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:12.0pt;color:#993300'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:150%;margin-top:3.6pt;'><span lang=EN-US style='font-size:9.0pt;line-height:150%'><a href="http://m.wodefanwen.com/mlhs_sstio6hlzi1yhlmhw2fo3jggkdrhl9fhc01203202q03703401n01900w_1.html"><span lang=EN-US style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";text-decoration:none;text-underline:none'><span lang=EN-US>点这里，有很多篇《重庆大学多媒体技术复习&nbsp;- 》</span></span></a><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-size:12.0pt;font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";color:#993300'>在线阅读本文：</span><span lang=EN-US style='font-size:12.0pt;color:#999999'><a href="http://m.wodefanwen.com/mlhd_7mim20sb831emx02t1mw_2.html"><span
+style='text-decoration:none;text-underline:none'>http://m.wodefanwen.com/mlhd_7mim20sb831emx02t1mw_2.html</span></a><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-top:15.6pt;margin-right:0cm;margin-bottom:23.4pt;margin-left:0cm;mso-para-margin-top:1.0gd;mso-para-margin-right:
+0cm;mso-para-margin-bottom:1.5gd;mso-para-margin-left:0cm;text-align:center'><b style='mso-bidi-font-weight:normal'><span style='font-size:22.0pt;font-family:
+宋体'>重庆大学多媒体技术复习&nbsp;- <span lang=EN-US><o:p></o:p></span></span></b></p>
+
+<div style='margin-top:2.5pt;margin-bottom:2.5pt'>
+
+<div style='margin-top:7.8pt;margin-right:0cm;margin-bottom:12.45pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm;mso-para-margin-bottom:.5gd;mso-para-margin-left:0cm;text-align:justify;text-justify:inter-ideograph;text-indent:32.0pt;mso-char-indent-count:2.0;line-height:22.0pt;mso-line-height-rule:exactly;mso-pagination:none;font-size:16.0pt;mso-bidi-font-family:"Times New Roman";mso-font-kerning:1.0pt'><p>当输入信号的变化速度超过反馈回路输出信号的最大变化速度时，就会出现斜率过载。 当输入信号与预测信号的差值接近零的区域，增量调制的输出出现随机交变的0和1，这种现  象叫做粒状噪声，这是不能被消除的。  </p><p>自适应增量调制根据输入信号的斜率的变化自动调整量化阶的大小，以使斜率过载和粒状噪声都减到最小。  </p><p>4、各种调制的基本思想，特点。 </p><p>自适应脉冲编码调制(APCM)的基本思想是什么？ </p><p>根据输入信号幅度大小来改变量化阶大小的一种波形编码技术。这种自适应可以是瞬时自 适应，即量化阶的大小每隔几个样本就改变，也可以是音节自适应，即量化阶的大小在较长时间周期里发生变化。 </p><p>差分脉冲编码调制(DPCM)的基本思想是什么？ </p><p>利用样本与样本之间存在的信息冗余度来进行编码的一种数据压缩技术。这种技术是根据 过去的样本去估算(estimate)下一个样本信号的幅度大小，这个值称为预测值，然后对实际信号值与预测值之差进行量化编码，从而就减少了表示每个样本信号的位数。它与脉冲编码调制(PCM)不同的是，PCM是直接对采样信号进行量化编码，而DPCM 是对实际信号值与预值 之差进行量化编码，存储或者传送的是差值而不是幅度绝对值，这就降低了传送或存储的数据量。此外，它还能适应大范围变化的输入信号。 </p><p>自适应差分脉冲编码调制(ADPCM)的两个基本思想是什么？ </p><p>ADPCM 综合了APCM 的自适应特性和DPCM系统的差分特性，是一种性能比较好的波 形编码。它的核心想法是： </p><p>① 利用自适应的思想改变量化阶的大小，即使用小的量化阶(step-size)去编码小的差 值，使用大的量化阶去编码大的差值。 </p><p>② 使用过去的样本值估算下一个输入样本的预测值，使实际样本值和预测值之间的差 值总是最小。 </p><p>5、为什么进行多媒体数据压缩。 </p><p>因为一些多媒体数据占用内存比较大，压缩可以缩小文件内存，这样可以方便传递。 </p><p>6、在声音数字化和压缩过程中影响声音质量的因素。 （采样频率 量化位数 声道数） </p><p>因素：采样频率、样本精度、通道数、数据率、压缩技术 </p><p>当采样频率不低于声音信号最高频率的两倍时，能进行无损采样，采</p><p>样精度越大，样本数愈多，声音质量越好；通道数和数据率越大声音越好。 </p><p>7、G.721、G.711和G.722等标准的压缩算法、压缩率、输出速率。 </p><p>G.721：输出是用4位表示的差分信号，他的采样频率是8KHZ，他的数据为32kb/s。  G.711：采样频率为8KHZ，8位/样本，数据率为64kb/s  G.722：音频信号宽带为7KHZ，数据率为64kb/s。  </p><p>第4章 无损数据压缩 </p><p>1、什么时有损压缩，什么是无损压缩，那些算法是无损的，那些是有损的，压缩的可行性和必要性。 </p><p>常用图片格式介绍总的来说，有两种截然不同的图像格式类型： 即有损压缩和无损压缩。 1．有损压缩 ??有损压缩可以减少图像在内存和磁盘中占用的空间，在屏幕上观看图像时，不会发现它对图像的外观产生太大的不利影响。因为人的眼睛对光线比较敏感，光线对景物的作用比颜色的作用更为重要，这就是有损压缩技术的基本依据。 ??有损压缩的特点是保持颜色的逐渐变化，删除图像中颜色的突然变化。生物学中的大量实验证明，人类大脑会利用与附近最接近的颜色来填补所丢失的颜色。例如，对于蓝色天空背景上的一朵白云，有损压缩的方法就是删除图像中景物边缘的某些颜色部分。当在·屏幕上看这幅图时，大脑会利用在景物上看到的颜色填补所丢失的颜色部分。利用有损压缩技术，某些数据被有意地删除了，而被取消的数据也不再恢复。 ??无可否认，利用有损压缩技术可以大大地压缩文件的数据，但是会影响图像质量。如果使用了有损压缩的图像仅在屏幕上显示，可能对图像质量影响不太大，至少对于人类眼睛的识别程度来说区别不大。可是，如果要把一幅经过有损压缩技术处理的图像用高分辨率打印机打印出来，那么图像质量就会有明显的受损痕迹。 2．无损压缩 ??无损压缩的基本原理是相同的颜色信息只需保存一次。压缩图像的软件首先会确定图像中哪些区域是相同的，哪些是不同的。包括了重复数据的图像(如蓝天)就可以被压缩，只有蓝天的起始点和终结点需要被记录下来。但是蓝色可能还会有不同的深浅，天空有时也可能被树木、山峰或其他的对象掩盖，这些就需要另外记录。从本质上看，无损压缩的方法可以删除一些重复数据，大大减少要在磁盘上保存的图像尺寸。但是，无损压缩的方法并不能减少图像的内存占用量，这是因为，当从磁盘上读取图像时，软件又会把丢失的像素用适当的颜色信息填充进来。如果要减少图像占用内存的容量，就必须使用有损压缩方法。 ??无损压缩方法的优点是能够比较好地保存图像的质量，但是相对来说这种方法的压缩率比较低。但是，如果需要把图像用高分辨率的打印机打印出来，最好还是使用无损压缩</p><p>几乎所有的图像文件都采用各自简化的格式名作为文件扩展名。从扩展名就可知道这幅图像是按什么格式存储的，应该用什么样的软件去读／写等等。 </p><p>2、词典编码的基本思想。 </p><p>基本思想是 用符号代替一串字符；这一串字符可以是有意义的，也可以是无意义的。在编码中仅仅把字符串看成是一个号码，而不去管它来表示什么意义。 </p><p>3、霍夫曼编码。 4、算数编码。 </p><p>5、LZ77，LZSS，LZ78，LZW编码和LZW的译码。   </p><p>第5章 彩色数字图像基础 </p><p>1、图像的属性：分辨率，像素深度等。 </p><p>屏幕分辨率：衡量显示设备再现图像时所能达到的精细程度的度量方法。  图像分辨率：图像精细程度的度量方法。  像素深度：存储每个像素所用的位数。  </p><p>真彩色：RGB   伪彩色：用查找出的R,G,B值产生的彩色称为伪彩色。 </p><p>2、相加和相减混色模型以及应用的场合。 </p><p>显示彩色图像采用相加混色模型   打印彩色图像采用相减混色模型 </p><p>3、图像的种类（矢量图，点位图，灰度图，彩色图）和特点。 </p><p>点位图概念：位图使用我们称为像素的一格一格的小点来描述图像.您的计算机屏幕其实就是一张包含大量像素点的网格.在位图中,上面我们看到的树叶图像将会由每一个网格中的像素点的位置和色彩值来决定.每一点的色彩是固定的 </p><p>点位图的特点：逼真，占用存储容量大，灵活性不好  </p><p>矢量图概念：使用线段和曲线描述图像,所以称为矢量,同时图形也包含了色彩和位置信息.  矢量图的特点：图形缩放后不变形，占用存储量小，灵活性好，表现能力具有局限性，对于复杂又不易于用数序方法描述的对象矢量图无能为力，显示速度比点位图慢。  灰度图：只有明暗不同的像素而没有彩色像素组成的图像  彩色图：有彩色像素组成的图像 </p><p>4、计算某种图像的数据量大小： </p><p> 文件字节数=图像分辨率X图像深度/8 </p><p>5、JPEG压缩编码的步骤和每步的作用，其中每步采用的压缩算法及其特点。 </p><p>一种是采用离散余弦变换为基础的有损压缩算法，另一种是采用以预测技术为基础的无损压缩算法。  </p><p>JPEG压缩编码算法的主要计算步骤是： </p><p>(1) DCT 变换： 无损->集中能量的到较少系数 (2) 量化： 有损->减少非0系数值，增加0系数值 (3) Z 字形编码： 无损->增加连续0个数 </p><p>(4) 使用（差分脉冲调制编码）DPCM 对直流系数(DC)进行编码： 无损->压缩数据 (5) 使用RLE（行程长度编码） 对交流系数(AC)进行编码： 无损->压缩数据 (6) 熵编码：无损->压缩数据 </p><p>6、列举当前主要的显示技术并说明其技术要点。 7、PPI等概念。 </p><p>显示设备中的ppi概念比较绝对，高ppi显示图像会更清楚。 </p><p>你说的相机的取景设备ppi对拍摄照片的质量影响当然也是越高越好，但是前提是成像技术一样，周边条件都相同才成立，普通卡片机和单反比，虽然单反成像器的ppi低，但是成像技术差距很大，所以单反效果好的多。 </p><p> </p><p> </p><p>第6章 颜色的度量体系 </p><p>1、描述颜色的几个术语： </p><p>色度：色相，指颜色的外观，用于区别颜色的名称或者种类  </p><p>饱和度：相对于明度的一个区域的色彩，是指颜色的纯洁性，它可用来区别颜色明暗的程度。  亮度：a.明度：视觉系统对可见物体辐射或者发光多少的感知属性。 b.亮度：是用反应视觉特性的光谱敏感函数加权之后得到的辐射功率。  </p><p>颜色空间：是表示颜色的一种数学方法，人们用它来指定和产生颜色，使颜色形象化。  颜色度量体系：也叫做颜色制或者叫做颜色体制，实际就是人们组织和表示颜色的方法。 </p><p> </p><p>第8章 彩色数字电视基础 </p><p>1、不同电视制式采用的颜色模型（PAL，NTSC，SECM）。 </p><p> 电视的颜色空间与特点（原因）；  全电视信号的概念；  彩色电视信号的组成。 </p><p>NTSC：正交幅度调制彩色电视制，图像的宽高比为4：3，525条扫描线，隔行扫描，30帧每秒，视像带宽为4.2MHz，使用YIQ信号，色度信号采用正交幅度调制，声音用调频制，总的电视通道带宽为6MHz。  </p><p>PAL：逐行倒相彩色电视制，图像的宽高比为4：3，625条扫描线，隔行扫描，25帧每秒，视像带宽为4MHz，使用YUV信号，色度信号采用正交幅度调制，声音用调频制，总的电视通道带宽为8MHz。  </p><p>SECM：顺序传送彩色与存储彩色电视制，图像的宽高比为4：3，625条扫描线，25帧每</p><p></p></div>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:12.45pt;margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm;mso-para-margin-bottom:.8gd;mso-para-margin-left:0cm;text-align:justify;text-justify:inter-ideograph;text-indent:32.0pt;mso-char-indent-count:2.0;line-height:24.0pt;mso-line-height-rule:exactly;mso-pagination:none'><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-family:"Times New Roman";mso-font-kerning:1.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoFooter align=center style='text-align:center'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";color:#993300'>南京廖华</span><span lang=EN-US><a
+href="http://m.wodefanwen.com/">http://m.wodefanwen.com/</a></span></p>
+
+<p class=MsoFooter align=center style='text-align:center'><span
+style='font-family:宋体;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";color:#993300'>免费文档下载</span><span lang=EN-US style='font-size:16.0pt;mso-bidi-font-size:10.0pt;color:#993300'><o:p></o:p></span></p>
+
+</div></div>
+</body></html>
